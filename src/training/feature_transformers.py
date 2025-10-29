@@ -11,6 +11,7 @@ from sklearn.base import BaseEstimator, TransformerMixin
 from sklearn.feature_extraction.text import TfidfVectorizer
 from typing import Union, List
 import logging
+from pathlib import Path
 
 logger = logging.getLogger(__name__)
 
@@ -293,6 +294,80 @@ class CharNgramFeatureExtractor(BaseEstimator, TransformerMixin):
         return [f'char_ngram_{i}' for i in range(len(self.vectorizer.get_feature_names_out()))]
 
 
+class EmbeddingTransformer(BaseEstimator, TransformerMixin):
+    """
+    Custom transformer for generating sentence embeddings
+    Uses sentence-transformers for semantic feature extraction
+    """
+    
+    def __init__(self, model_name: str = 'all-MiniLM-L6-v2', 
+                 model_dir: str = 'models/embedding_models',
+                 column_name: str = 'dirty_name',
+                 cache_embeddings: bool = True):
+        self.model_name = model_name
+        self.model_dir = Path(model_dir)
+        self.column_name = column_name
+        self.cache_embeddings = cache_embeddings
+        self.model = None
+        self.embedding_dim = 384  # all-MiniLM-L6-v2 dimension
+        self.embedding_cache = {}
+        
+    def fit(self, X, y=None):
+        """Load the embedding model"""
+        try:
+            from sentence_transformers import SentenceTransformer
+            
+            # Check if model exists locally
+            model_path = self.model_dir / self.model_name
+            if model_path.exists():
+                logger.info(f"Loading embedding model from {model_path}")
+                self.model = SentenceTransformer(str(model_path))
+            else:
+                logger.info(f"Downloading embedding model: {self.model_name}")
+                self.model = SentenceTransformer(self.model_name)
+                
+                # Save model locally for future use
+                self.model.save(str(model_path))
+                logger.info(f"Saved embedding model to {model_path}")
+                
+        except Exception as e:
+            logger.error(f"Failed to load embedding model: {e}")
+            raise
+            
+        return self
+    
+    def transform(self, X):
+        """Generate embeddings for input text"""
+        if self.model is None:
+            raise ValueError("EmbeddingTransformer must be fitted before transform")
+            
+        if isinstance(X, pd.DataFrame):
+            text_series = X[self.column_name]
+        else:
+            text_series = pd.Series(X)
+        
+        # Generate embeddings
+        texts = text_series.fillna('').tolist()
+        embeddings = self.model.encode(texts, convert_to_tensor=False)
+        
+        # Convert to DataFrame
+        embedding_df = pd.DataFrame(
+            embeddings,
+            columns=[f'embedding_{i}' for i in range(self.embedding_dim)],
+            index=text_series.index
+        )
+        
+        return embedding_df
+    
+    def fit_transform(self, X, y=None):
+        """Fit and transform in one step"""
+        return self.fit(X, y).transform(X)
+    
+    def get_feature_names_out(self, input_features=None):
+        """Return embedding feature names"""
+        return [f'embedding_{i}' for i in range(self.embedding_dim)]
+
+
 class LabelEncoder(BaseEstimator, TransformerMixin):
     """
     Custom label encoder that preserves label mapping for inference
@@ -333,18 +408,32 @@ class DataPreprocessor(BaseEstimator, TransformerMixin):
     Combined preprocessor that handles the full data cleaning pipeline
     """
     
-    def __init__(self, text_column: str = 'dirty_name', label_column: str = 'dirty_label', use_char_ngrams: bool = True):
+    def __init__(self, text_column: str = 'dirty_name', 
+                 label_column: str = 'dirty_label', 
+                 use_char_ngrams: bool = True,
+                 use_embeddings: bool = True,  # New parameter
+                 embedding_model: str = 'all-MiniLM-L6-v2'):  # New parameter
         self.text_column = text_column
         self.label_column = label_column
         self.use_char_ngrams = use_char_ngrams
+        self.use_embeddings = use_embeddings  # New
+        self.embedding_model = embedding_model  # New
+        
+        # Existing transformers
         self.text_cleaner = TextCleaner()
         self.duplicate_remover = DuplicateRemover(text_column)
         self.feature_extractor = FeatureExtractor(text_column)
         self.char_ngram_extractor = CharNgramFeatureExtractor(column_name=text_column) if use_char_ngrams else None
         self.label_encoder = LabelEncoder()
         
+        # New embedding transformer
+        self.embedding_extractor = EmbeddingTransformer(
+            model_name=embedding_model,
+            column_name=text_column
+        ) if use_embeddings else None
+        
     def fit(self, X, y=None):
-        """Fit all transformers"""
+        """Fit all transformers including embeddings"""
         if isinstance(X, pd.DataFrame):
             # Clean text
             X_cleaned = X.copy()
@@ -353,12 +442,18 @@ class DataPreprocessor(BaseEstimator, TransformerMixin):
             # Remove duplicates
             X_cleaned = self.duplicate_remover.fit_transform(X_cleaned)
 
-            # Extract features
+            # Extract basic features
             self.feature_extractor.fit(X_cleaned)
 
             # Fit character n-gram extractor if enabled
             if self.use_char_ngrams and self.char_ngram_extractor is not None:
                 self.char_ngram_extractor.fit(X_cleaned)
+
+            # NEW: Fit embedding extractor if enabled
+            if self.use_embeddings and self.embedding_extractor is not None:
+                logger.info("Fitting embedding transformer...")
+                self.embedding_extractor.fit(X_cleaned)
+                logger.info("Embedding transformer fitted successfully")
 
             # Encode labels if provided
             if y is not None:
@@ -367,7 +462,7 @@ class DataPreprocessor(BaseEstimator, TransformerMixin):
         return self
     
     def transform(self, X, y=None):
-        """Transform data"""
+        """Transform data including embeddings"""
         if isinstance(X, pd.DataFrame):
             # Clean text
             X_cleaned = X.copy()
@@ -385,6 +480,13 @@ class DataPreprocessor(BaseEstimator, TransformerMixin):
                 # Combine features horizontally
                 features = pd.concat([features, char_ngram_features], axis=1)
 
+            # NEW: Extract embedding features if enabled
+            if self.use_embeddings and self.embedding_extractor is not None:
+                logger.info("Generating embeddings...")
+                embedding_features = self.embedding_extractor.transform(X_cleaned)
+                features = pd.concat([features, embedding_features], axis=1)
+                logger.info(f"Generated {embedding_features.shape[1]} embedding features")
+
             # Encode labels if provided
             if y is not None:
                 y_encoded = self.label_encoder.transform(y)
@@ -395,7 +497,7 @@ class DataPreprocessor(BaseEstimator, TransformerMixin):
         return X
     
     def fit_transform(self, X, y=None):
-        """Fit and transform in one step"""
+        """Fit and transform in one step including embeddings"""
         if isinstance(X, pd.DataFrame):
             # Clean text
             X_cleaned = X.copy()
@@ -413,6 +515,13 @@ class DataPreprocessor(BaseEstimator, TransformerMixin):
                 # Combine features horizontally
                 features = pd.concat([features, char_ngram_features], axis=1)
 
+            # NEW: Extract embedding features if enabled
+            if self.use_embeddings and self.embedding_extractor is not None:
+                logger.info("Fitting and generating embeddings...")
+                embedding_features = self.embedding_extractor.fit_transform(X_cleaned)
+                features = pd.concat([features, embedding_features], axis=1)
+                logger.info(f"Generated {embedding_features.shape[1]} embedding features")
+
             # Encode labels if provided
             if y is not None:
                 # Remove corresponding labels for duplicates
@@ -426,12 +535,16 @@ class DataPreprocessor(BaseEstimator, TransformerMixin):
         return X
     
     def get_feature_names_out(self, input_features=None):
-        """Return feature names"""
+        """Return all feature names including embeddings"""
         feature_names = list(self.feature_extractor.get_feature_names_out())
 
         # Add character n-gram feature names if enabled
         if self.use_char_ngrams and self.char_ngram_extractor is not None:
             feature_names.extend(self.char_ngram_extractor.get_feature_names_out())
+
+        # NEW: Add embedding feature names if enabled
+        if self.use_embeddings and self.embedding_extractor is not None:
+            feature_names.extend(self.embedding_extractor.get_feature_names_out())
 
         return feature_names
     

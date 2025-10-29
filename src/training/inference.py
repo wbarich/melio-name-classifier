@@ -21,10 +21,14 @@ class NameClassificationModel:
     KServe-compatible model class for name classification
     """
     
-    def __init__(self, model_name: Optional[str] = None, model_dir: str = "models", use_champion: bool = True):
+    def __init__(self, model_name: Optional[str] = None, 
+                 model_dir: str = "models", 
+                 use_champion: bool = True,
+                 use_embeddings: bool = True):  # New parameter
         self.model_name = model_name
         self.model_dir = Path(model_dir)
         self.use_champion = use_champion
+        self.use_embeddings = use_embeddings  # New
         self.model = None
         self.preprocessor = None
         self.label_mappings = None
@@ -69,6 +73,15 @@ class NameClassificationModel:
             # Load preprocessor
             self.preprocessor = joblib.load(paths['preprocessor'])
             logger.info(f"Loaded preprocessor from {paths['preprocessor']}")
+            
+            # If embeddings are enabled, ensure embedding model is available
+            if self.use_embeddings and hasattr(self.preprocessor, 'embedding_extractor'):
+                if self.preprocessor.embedding_extractor is not None:
+                    logger.info("Loading embedding model for runtime inference...")
+                    # Initialize embedding model with dummy data
+                    dummy_df = pd.DataFrame({'dirty_name': ['dummy']})
+                    self.preprocessor.embedding_extractor.fit(dummy_df)
+                    logger.info("Embedding model loaded successfully")
             
             # Load label mappings
             self.label_mappings = joblib.load(paths['label_mapping'])
@@ -212,8 +225,8 @@ class ModelServer:
     KServe Model Server interface
     """
     
-    def __init__(self, model_name: Optional[str] = None, model_dir: str = "models", use_champion: bool = True):
-        self.model = NameClassificationModel(model_name, model_dir, use_champion)
+    def __init__(self, model_name: Optional[str] = None, model_dir: str = "models", use_champion: bool = True, use_embeddings: bool = True):
+        self.model = NameClassificationModel(model_name, model_dir, use_champion, use_embeddings)
         self.model.load()
     
     def predict(self, request: Dict) -> Dict:
@@ -249,7 +262,7 @@ class ModelServer:
             return {'error': str(e)}
 
 
-def create_inference_pipeline(model_name: Optional[str] = None, model_dir: str = "models", use_champion: bool = True):
+def create_inference_pipeline(model_name: Optional[str] = None, model_dir: str = "models", use_champion: bool = True, use_embeddings: bool = True):
     """
     Create a complete inference pipeline
     
@@ -257,11 +270,12 @@ def create_inference_pipeline(model_name: Optional[str] = None, model_dir: str =
         model_name: Name of the model to load (if use_champion=False)
         model_dir: Directory containing model files
         use_champion: Whether to use the champion model (default: True)
+        use_embeddings: Whether to use embeddings (default: True)
         
     Returns:
         Configured inference pipeline
     """
-    return ModelServer(model_name, model_dir, use_champion)
+    return ModelServer(model_name, model_dir, use_champion, use_embeddings)
 
 
 # Example usage and testing

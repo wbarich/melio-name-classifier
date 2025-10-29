@@ -46,13 +46,37 @@
         "label_mapping": "models/random_forest_label_mapping.joblib"
       },
       "created_at": "2025-10-29T09:12:12.056250",
+      "is_champion": false
+    },
+    "Random Forest_20251029_112528": {
+      "model_id": "Random Forest_20251029_112528",
+      "model_name": "random_forest",
+      "model_type": "Random Forest",
+      "metrics": {
+        "test_accuracy": 0.9280973451327433,
+        "test_f1": 0.9206140969156561,
+        "test_precision": 0.9316954653952548,
+        "test_recall": 0.9280973451327433,
+        "train_accuracy": 1.0,
+        "train_f1": 1.0,
+        "cv_f1_mean": 0.9268105720504038,
+        "cv_f1_std": 0.008186472164642715,
+        "overfitting_accuracy": 0.07190265486725667,
+        "overfitting_f1": 0.0793859030843439
+      },
+      "paths": {
+        "model": "models/random_forest_model.joblib",
+        "preprocessor": "models/random_forest_preprocessor.joblib",
+        "label_mapping": "models/random_forest_label_mapping.joblib"
+      },
+      "created_at": "2025-10-29T11:25:28.871349",
       "is_champion": true
     }
   },
   "champion": {
-    "model_id": "Random Forest_20251029_091212",
+    "model_id": "Random Forest_20251029_112528",
     "reason": "Best test F1-score",
-    "set_at": "2025-10-29T09:12:12.061917"
+    "set_at": "2025-10-29T11:25:28.879277"
   },
-  "last_updated": "2025-10-29T09:12:12.056259"
+  "last_updated": "2025-10-29T11:25:28.871367"
 }

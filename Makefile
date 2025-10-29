@@ -1,6 +1,6 @@
 # Makefile for Name Classifier KServe Project
 
-.PHONY: help start stop restart logs status test train clean
+.PHONY: help start stop restart logs status test train train-docker clean
 
 # Default target - make Docker the easiest option
 help:
@@ -19,7 +19,7 @@ help:
 	@echo "  make test          - Run all tests"
 	@echo ""
 	@echo "🤖 TRAINING:"
-	@echo "  make train         - Train the model (run locally)"
+	@echo "  make train-docker  - Train with embeddings in Docker (recommended)"
 	@echo ""
 	@echo "🧹 UTILITIES:"
 	@echo "  make clean         - Clean up temporary files"
@@ -84,11 +84,22 @@ test:
 	docker-compose down
 	@echo "✅ Tests complete"
 
-# Train the model
-train:
-	@echo "🤖 Training the model..."
-	python3 src/training/train_model.py
-	@echo "✅ Training complete"
+# Train the model with embeddings in Docker (recommended)
+train-docker:
+	@echo "🚀 Training model with embeddings in Docker..."
+	@echo "   This includes semantic embeddings for better accuracy!"
+	@echo "   First run may take 5-8 minutes (downloading embedding model)"
+	@echo ""
+	@echo "📊 Progress monitoring enabled - you'll see real-time updates"
+	@echo ""
+	docker run --rm -v $(PWD):/app -w /app melio-name-classifier python src/training/train_model.py
+	@echo ""
+	@echo "✅ Training with embeddings complete!"
+	@echo ""
+	@echo "🎯 New model features:"
+	@echo "   • 449 total features (65 original + 384 embeddings)"
+	@echo "   • Semantic understanding via all-MiniLM-L6-v2"
+	@echo "   • Better accuracy, especially for Company classification"
 	@echo ""
 	@echo "💡 To use the new model, restart the server:"
 	@echo "   make restart"

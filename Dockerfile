@@ -15,17 +15,21 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy source code
 COPY src/ .
 
-# Copy trained models
+# Copy trained models and embedding models
 COPY models/ models/
 
 # Create directories for templates and static files
 RUN mkdir -p templates static
+
+# Create directory for embedding model cache
+RUN mkdir -p models/embedding_models
 
 # Expose port 8080 (KServe default HTTP port)
 EXPOSE 8080
 
 # Set environment variables
 ENV PYTHONUNBUFFERED=1
+ENV SENTENCE_TRANSFORMERS_HOME=/app/models/embedding_models
 
 # Run the KServe model server
 # KServe will automatically bind to 0.0.0.0:8080

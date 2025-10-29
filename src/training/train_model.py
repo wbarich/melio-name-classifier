@@ -20,7 +20,7 @@ from rich.progress import track
 import warnings
 warnings.filterwarnings('ignore')
 
-from transformers import DataPreprocessor
+from feature_transformers import DataPreprocessor
 from model_registry import register_champion_model
 
 
@@ -39,16 +39,24 @@ def load_data():
 
 
 def create_models():
-    """Create a dictionary of models to evaluate"""
-    # Base models
+    """Create models optimized for high-dimensional features (including embeddings)"""
+    # Random Forest with parameters optimized for high-dimensional data
     rf = RandomForestClassifier(
-        n_estimators=100,
+        n_estimators=200,  # Increased for better performance with more features
+        max_depth=25,      # Increased to handle more complex feature space
+        min_samples_split=3,  # Reduced to allow more splits
+        min_samples_leaf=1,   # Reduced for better granularity
+        max_features='sqrt',  # Use sqrt for high-dimensional data
         random_state=42,
         n_jobs=-1
     )
+    
+    # Logistic Regression with regularization for high-dimensional data
     lr = LogisticRegression(
         random_state=42,
-        max_iter=1000
+        max_iter=2000,  # Increased for convergence with more features
+        C=0.1,          # Regularization for high-dimensional data
+        solver='liblinear'  # Good for high-dimensional data
     )
 
     # Ensemble model: Voting classifier combining top performers
@@ -395,9 +403,13 @@ def run():
         console.print(f"  Training set: {len(train_df):,} samples")
         console.print(f"  Test set: {len(test_df):,} samples")
         
-        # Initialize preprocessor
-        console.print("🔧 Initializing preprocessor...")
-        preprocessor = DataPreprocessor()
+        # Initialize preprocessor with embeddings
+        console.print("🔧 Initializing preprocessor with embeddings...")
+        preprocessor = DataPreprocessor(
+            use_char_ngrams=True,
+            use_embeddings=True,  # Enable embeddings
+            embedding_model='all-MiniLM-L6-v2'
+        )
         
         # Prepare data
         X_train = train_df[['dirty_name']]
@@ -405,12 +417,13 @@ def run():
         X_test = test_df[['dirty_name']]
         y_test = test_df['dirty_label']
         
-        # Fit preprocessor on training data
-        console.print("🧹 Preprocessing training data...")
+        # Fit preprocessor on training data (includes embedding model download/fitting)
+        console.print("🧹 Preprocessing training data with embeddings...")
+        console.print("   This may take a few minutes for first-time embedding model download...")
         X_train_processed, y_train_encoded = preprocessor.fit_transform(X_train, y_train)
         
         # Transform test data
-        console.print("🧹 Preprocessing test data...")
+        console.print("🧹 Preprocessing test data with embeddings...")
         X_test_processed, y_test_encoded = preprocessor.transform(X_test, y_test)
         
         console.print(f"  Processed training set: {X_train_processed.shape}")
