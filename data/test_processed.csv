@@ -1,0 +1,905 @@
+dirty_name,dirty_label,name_length,word_count,has_prefix,has_suffix,is_uppercase,has_numbers,has_special_chars,prefix
+FONZIE HARFOOT,Person,14,2,False,False,True,False,False,None
+mydeo Flashset Gigaclub jabbersphere Inc.,Company,41,5,False,True,False,False,True,None
+Edgeclub FLIPTUNE Family Trust,Company,30,4,False,False,False,False,False,None
+effie reynalds,Person,14,2,False,False,False,False,False,None
+Almérinda Antonio,Person,17,2,False,False,False,False,False,None
+Skajo photofeed Consortium,Company,26,3,False,False,False,False,False,None
+Mrs. RALF WISBY,Person,15,3,False,False,False,False,True,None
+green apple associates cc,Company,25,4,False,False,False,False,False,None
+Anita Mahlangu,Person,14,2,False,False,False,False,False,None
+Stefan Adonis,Person,13,2,False,False,False,False,False,None
+SHERILYN COLLICOTT,Person,18,2,False,False,True,False,False,None
+Mr. LIEZEL PATHER,Person,17,3,False,False,False,False,True,None
+ABBY GOOZEE,Person,11,2,False,False,True,False,False,None
+DR Ariadne Brookton,Person,19,3,False,False,False,False,False,None
+Photofeed quaxo Zooxo GMBH Co.,Company,30,5,False,False,False,False,True,None
+Miss Valérie Norster,Person,20,3,False,False,False,False,False,None
+brianne bragg,Person,13,2,False,False,False,False,False,None
+miss DANA RADMORE,Person,17,3,False,False,False,False,False,None
+Mrs. BRENT HORN,Person,15,3,False,False,False,False,True,None
+layo Avamm CC.,Company,14,3,False,False,False,False,True,None
+Prof. Dr. Samuel Letsoalo,Person,25,4,False,False,False,False,True,None
+Barry Maritz,Person,12,2,False,False,False,False,False,None
+prof. jeanette reddy,Person,20,3,False,False,False,False,True,None
+Yusuf Ndlovu,Person,12,2,False,False,False,False,False,None
+Joe Taylor,Person,10,2,False,False,False,False,False,None
+brooks zammett,Person,14,2,False,False,False,False,False,None
+christian hawkswood,Person,19,2,False,False,False,False,False,None
+AVAVEO SICAV,Company,12,2,False,False,True,False,False,None
+Mrs. takalani parker,Person,20,3,False,False,False,False,True,None
+Patrick de Beer,Person,15,3,False,False,False,False,False,None
+Abe Copestick,Person,13,2,False,False,False,False,False,None
+miss Prof. Mark Lawrence,Person,24,4,False,False,False,False,True,None
+Philip Brown,Person,12,2,False,False,False,False,False,None
+Miss conrad mckoy,Person,17,3,False,False,False,False,False,None
+Photolist Lda.,Company,14,2,False,False,False,False,True,None
+Miss EVIE HAMEL,Person,15,3,False,False,False,False,False,None
+MISS Ms. Johanna Motloung,Person,25,4,False,False,False,False,True,None
+Alison Labuschagne,Company,18,2,False,False,False,False,False,None
+VALÉRIE IVANICHEV,Person,17,2,False,False,True,False,False,None
+Patrick Stander,Person,15,2,False,False,False,False,False,None
+Dr. Nicola Vilakazi,Person,19,3,False,False,False,False,True,None
+THABISO BLIGNAUT,Person,16,2,False,False,True,False,False,None
+Chantelle Mabunda,Company,17,2,False,False,False,False,False,None
+ROGER NDABA,Person,11,2,False,False,True,False,False,None
+Gale Eldrid,Person,11,2,False,False,False,False,False,None
+TEODORICO FEATONBY,Person,18,2,False,False,True,False,False,None
+Aretha Wanless,Person,14,2,False,False,False,False,False,None
+Pren Spreadbury,Person,15,2,False,False,False,False,False,None
+Mrs. MR. SIBUSISO BEUKES,Person,24,4,False,False,False,False,True,None
+Theo Rapin,Person,10,2,False,False,False,False,False,None
+Hon. Unathi Nair,Person,16,3,False,False,False,False,True,None
+joseph nelson,Person,13,2,False,False,False,False,False,None
+Mrs. THANDEKA WALTERS,Person,21,3,False,False,False,False,True,None
+Göran Colcutt,Person,13,2,False,False,False,False,False,None
+prof. musa mchunu,Person,17,3,False,False,False,False,True,None
+Mrs. Kabelo Mashego,Person,19,3,False,False,False,False,True,None
+Altusi Group Ltd,Company,16,3,False,True,False,False,False,None
+Judicaël Deware,Person,15,2,False,False,False,False,False,None
+angela hlatshwayo,Person,17,2,False,False,False,False,False,None
+MS Gérald Kivell,Person,16,3,False,False,False,False,False,None
+Ernestus Baldacchi,Person,18,2,False,False,False,False,False,None
+MISS shoshanna ives,Person,19,3,False,False,False,False,False,None
+miss Hon. Thato Campbell,Person,24,4,False,False,False,False,True,None
+lindiwe wright,Person,14,2,False,False,False,False,False,None
+DASIE PERELLO,Person,13,2,False,False,True,False,False,None
+Dr silvana wedderburn,Person,21,3,False,False,False,False,False,None
+Maureen Cloete,Person,14,2,False,False,False,False,False,None
+Prof. Sandile September,Person,23,3,False,False,False,False,True,None
+Mr. hon. simone laubscher,Person,25,4,False,False,False,False,True,None
+Universidade De Brasília,University,24,3,False,False,False,False,False,None
+Pan Africa Am Assup1,Company,20,4,False,False,False,True,False,None
+Thandeka Jacobs,Company,15,2,False,False,False,False,False,None
+Miss karabo lubbe,Person,17,3,False,False,False,False,False,None
+Evangelia Prosch,Person,16,2,False,False,False,False,False,None
+Mrs SIMONE MASEKO,Person,17,3,False,False,False,False,False,None
+Danielle Jansen,Person,15,2,False,False,False,False,False,None
+tamera gurling,Person,14,2,False,False,False,False,False,None
+SAREE PAIGE,Person,11,2,False,False,True,False,False,None
+miss kagiso maree,Person,17,3,False,False,False,False,False,None
+KONSTANTIN DENK,Person,15,2,False,False,True,False,False,None
+Rachel Dowty,Person,12,2,False,False,False,False,False,None
+Hon. Emmanuel de Beer,Person,21,4,False,False,False,False,True,None
+DORALIN O'SCULLY,Company,16,2,False,False,True,False,True,None
+hon. sibusiso ross,Person,18,3,False,False,False,False,True,None
+Shaun Baloyi,Person,12,2,False,False,False,False,False,None
+teri tomaszewicz,Person,16,2,False,False,False,False,False,None
+sibongile mthembu,Person,17,2,False,False,False,False,False,None
+Mà Yitzhakof,Person,12,2,False,False,False,False,False,None
+Mr rev. melanie maree,Person,21,4,False,False,False,False,True,None
+hon. julia cassim,Person,17,3,False,False,False,False,True,None
+VUYOKAZI MARTIN,Person,15,2,False,False,True,False,False,None
+Rob Bell,Person,8,2,False,False,False,False,False,None
+ELIZABETH MOKONE,Person,16,2,False,False,True,False,False,None
+Thembi Schutte,Person,14,2,False,False,False,False,False,None
+MANDY VILAKAZI,Person,14,2,False,False,True,False,False,None
+inv ass man galeqt,Company,18,4,False,False,False,False,False,None
+Miss Aurélie Sauvan,Person,19,3,False,False,False,False,False,None
+Dr. Lauren Mlangeni,Person,19,3,False,False,False,False,True,None
+Mrs. Georgeanne Kubala,Person,22,3,False,False,False,False,True,None
+Sharai Rushton,Person,14,2,False,False,False,False,False,None
+DR. marie-josée mumby,Person,21,3,True,False,False,False,True,DR.
+Dr LURA HASSEY,Person,14,3,False,False,False,False,False,None
+Rebus Babra Ltd,Company,15,3,False,True,False,False,False,None
+BERTY BLASIAK,Person,13,2,False,False,True,False,False,None
+RÉBECCA BERESFORD,Person,17,2,False,False,True,False,False,None
+Tshepo Bouwer,Company,13,2,False,False,False,False,False,None
+nadine jooste,Person,13,2,False,False,False,False,False,None
+Dr. Stephanie Muller,Person,20,3,False,False,False,False,True,None
+Mrs Duduzile Pillay,Person,19,3,False,False,False,False,False,None
+Prof. RUTH BOUWER,Person,17,3,False,False,False,False,True,None
+JONATHAN NGWENYA,Person,16,2,False,False,True,False,False,None
+Roddie Kenforth,Person,15,2,False,False,False,False,False,None
+Véronique Huntingdon,Person,20,2,False,False,False,False,False,None
+Sr. DENISE BAILEY,Person,17,3,False,False,False,False,True,None
+Jorrie Capnor,Person,13,2,False,False,False,False,False,None
+Mr Aubrey Lewis,Person,15,3,False,False,False,False,False,None
+REV. ABIGAIL MASHABA,Person,20,3,True,False,True,False,True,REV.
+Belicia Shankland,Person,17,2,False,False,False,False,False,None
+Centidel gabcube Skaboo L.P.,Company,28,4,False,False,False,False,True,None
+AURÉLIE JOUL,Person,12,2,False,False,True,False,False,None
+Nompumelelo Lee,Company,15,2,False,False,False,False,False,None
+Desiree Hughes,Person,14,2,False,False,False,False,False,None
+Miss Kelly Abrahams,Person,19,3,False,False,False,False,False,None
+ashley lubbe,Person,12,2,False,False,False,False,False,None
+Mrs. Takalani Le Roux,Person,21,4,False,False,False,False,True,None
+Miss RICARDO NKOSI,Person,18,3,False,False,False,False,False,None
+August Szapiro,Person,14,2,False,False,False,False,False,None
+compendium resources group (pty) ltd,Company,36,5,False,True,False,False,True,None
+Mrs Anita Fredericks,Company,20,3,False,False,False,False,False,None
+MS. LISA MKHWANAZI,Person,18,3,True,False,True,False,True,MS.
+Anthony Ngwenya,Person,15,2,False,False,False,False,False,None
+melesa mcveagh,Person,14,2,False,False,False,False,False,None
+Heather Cooper,Person,14,2,False,False,False,False,False,None
+personal naicker,Person,16,2,False,False,False,False,False,None
+Charlene Clarke,Person,15,2,False,False,False,False,False,None
+Lorraine Carstens,Person,17,2,False,False,False,False,False,None
+cassandra hamp,Company,14,2,False,False,False,False,False,None
+babalwa jordaan,Person,15,2,False,False,False,False,False,None
+Dumisani Williams,Person,17,2,False,False,False,False,False,None
+REFILOE HERBST,Person,14,2,False,False,True,False,False,None
+Chloé Liff,Person,10,2,False,False,False,False,False,None
+DR sòng keems,Person,13,3,False,False,False,False,False,None
+MARK MOGALE,Person,11,2,False,False,True,False,False,None
+Dr. CHARMAINE MASILELA,Person,22,3,False,False,False,False,True,None
+vidoo GMBH Co.,Company,14,3,False,False,False,False,True,None
+roberta phetteplace,Person,19,2,False,False,False,False,False,None
+Neilla Briggdale,Person,16,2,False,False,False,False,False,None
+Takalani John,Company,13,2,False,False,False,False,False,None
+FEEDBUG Lazzy & Co.,Company,19,4,False,False,False,False,True,None
+SKINTE topicstorm Viva CC,Company,25,4,False,False,False,False,False,None
+Dr. Rev. Jacques Oberholzer,Person,27,4,False,False,False,False,True,None
+Aibox Thoughtstorm Corp.,Company,24,3,False,True,False,False,True,None
+Dà Langfitt,Person,11,2,False,False,False,False,False,None
+JONATHAN POTGIETER,Person,18,2,False,False,True,False,False,None
+barbara ismail,Person,14,2,False,False,False,False,False,None
+teboho street,Person,13,2,False,False,False,False,False,None
+Mr. Foss Doole,Person,14,3,False,False,False,False,True,None
+YOUBRIDGE Gabspot C.C.,Company,22,3,False,False,False,False,True,None
+MS GUGU CASSIM,Person,14,3,False,False,True,False,False,None
+TEENA HELLING,Person,13,2,False,False,True,False,False,None
+susan kleynhans,Person,15,2,False,False,False,False,False,None
+MS. THANDI WESSELS,Company,18,3,True,False,True,False,True,MS.
+Roseanne Varker,Person,15,2,False,False,False,False,False,None
+Skyble NTAG Dabvine PLLC.,Company,25,4,False,False,False,False,True,None
+BUSISIWE NGOBENI,Person,16,2,False,False,True,False,False,None
+FAYINA BURKETT,Person,14,2,False,False,True,False,False,None
+Musa Nkomo,Person,10,2,False,False,False,False,False,None
+Griffy Isaacson,Person,15,2,False,False,False,False,False,None
+dumisani le roux,Person,16,3,False,False,False,False,False,None
+Universitas Nasional Pasim,University,26,3,False,False,False,False,False,None
+Sr. Pieter Motaung,Person,18,3,False,False,False,False,True,None
+Kaia Lucey,Person,10,2,False,False,False,False,False,None
+DR. kobus vorster,Company,17,3,True,False,False,False,True,DR.
+Jeffrey Bosch,Person,13,2,False,False,False,False,False,None
+Samuel Shongwe,Person,14,2,False,False,False,False,False,None
+Brunel University Uxbridge,University,26,3,False,False,False,False,False,None
+KALEB FOWLS,Person,11,2,False,False,True,False,False,None
+api pl,Company,6,2,False,False,False,False,False,None
+MR cully lumm,Person,13,3,False,False,False,False,False,None
+Mr. dr. nigel stevens,Person,21,4,False,False,False,False,True,None
+BRIDGE ENG AND CONS LTD,Company,23,5,False,True,True,False,False,None
+MR Rev. Lucky Myburgh,Person,21,4,False,False,False,False,True,None
+Caroline Taljaard,Person,17,2,False,False,False,False,False,None
+alfred pienaar,Person,14,2,False,False,False,False,False,None
+HON. JOE GORDON,Person,15,3,True,False,True,False,True,HON.
+Rhybox PTY Limited,Company,18,3,False,True,False,False,False,None
+Duncan Batteson,Person,15,2,False,False,False,False,False,None
+Lyséa Scholtis,Person,14,2,False,False,False,False,False,None
+Mrs. Cynthia Sibanyoni,Person,22,3,False,False,False,False,True,None
+MR Mbali De Kock,Person,16,4,False,False,False,False,False,None
+Mr. NOMPUMELELO EBRAHIM,Person,23,3,False,False,False,False,True,None
+innojam DEVPULSE Limited.,Company,25,3,False,False,False,False,True,None
+Marcel Drinkale,Person,15,2,False,False,False,False,False,None
+Ericha Avo,Person,10,2,False,False,False,False,False,None
+DANILA DELMONTI,Person,15,2,False,False,True,False,False,None
+raymond cronje,Person,14,2,False,False,False,False,False,None
+MS Cullen Vero,Person,14,3,False,False,False,False,False,None
+celeste roux,Person,12,2,False,False,False,False,False,None
+Dr. Jacobus moagi,Person,17,3,False,False,False,False,True,None
+MISS Udell Withinshaw,Person,21,3,False,False,False,False,False,None
+Corpinvest 999 Pl,Company,17,3,False,False,False,True,False,None
+ORV EBENEZER,Person,12,2,False,False,True,False,False,None
+Dr alexis guiness,Person,17,3,False,False,False,False,False,None
+marie-thérèse pipes,Person,19,2,False,False,False,False,True,None
+Grant Naidu,Person,11,2,False,False,False,False,False,None
+Dr. Lucas Naidu,Person,15,3,False,False,False,False,True,None
+Franklin Bliben,Person,15,2,False,False,False,False,False,None
+Caisse RASPER SOLUTIONS And PL,Company,30,5,False,False,False,False,False,None
+Heidi Grobler,Person,13,2,False,False,False,False,False,None
+Darcee Roylance,Person,15,2,False,False,False,False,False,None
+simphiwe kleynhans,Person,18,2,False,False,False,False,False,None
+Graham van der Merwe,Person,20,4,False,False,False,False,False,None
+mellisent simioli,Person,17,2,False,False,False,False,False,None
+Natalie Manuel,Person,14,2,False,False,False,False,False,None
+René Gerber,Person,11,2,False,False,False,False,False,None
+africa greytown,Company,15,2,False,False,False,False,False,None
+Mr. Laura Morgan,Person,16,3,False,False,False,False,True,None
+Andries Sithole,Person,15,2,False,False,False,False,False,None
+MR WALLIW RAMEY,Person,15,3,False,False,True,False,False,None
+Mr milty local,Person,14,3,False,False,False,False,False,None
+Maï Getsham,Person,11,2,False,False,False,False,False,None
+Siyabonga Harmse,Company,16,2,False,False,False,False,False,None
+adèle waterman,Person,14,2,False,False,False,False,False,None
+UNIVERSITY OF KASHMIR,University,21,3,False,False,True,False,False,None
+CHANTAL DE KLERK,Person,16,3,False,False,True,False,False,None
+travis alps,Person,11,2,False,False,False,False,False,None
+thermostatic electron (pty) ltd.,Company,32,4,False,True,False,False,True,None
+MISS Takalani Naicker,Person,21,3,False,False,False,False,False,None
+Donald Kleynhans,Person,16,2,False,False,False,False,False,None
+MRS philip molepo,Person,17,3,False,False,False,False,False,None
+Universidad Autónoma del Noreste,University,32,4,False,False,False,False,False,None
+tish lambirth,Company,13,2,False,False,False,False,False,None
+DR. RONALD VAN HEERDEN,Company,22,4,True,False,True,False,True,DR.
+sibongile marx,Company,14,2,False,False,False,False,False,None
+MISS BEALLE MYLAN,Person,17,3,False,False,True,False,False,None
+Miss NICOLAAS HADEBE,Person,20,3,False,False,False,False,False,None
+CRAIG SIMELANE,Person,14,2,False,False,True,False,False,None
+MR. HANNES LETSOALO,Person,19,3,True,False,True,False,True,MR.
+CATHERINE MSOMI,Person,15,2,False,False,True,False,False,None
+Miss Cory Jeffree,Person,17,3,False,False,False,False,False,None
+Thembi Ross,Person,11,2,False,False,False,False,False,None
+Bongani Nkuna,Person,13,2,False,False,False,False,False,None
+Milton Aspole,Person,13,2,False,False,False,False,False,None
+Kentz Rail Pl,Company,13,3,False,False,False,False,False,None
+Phumzile Otto,Person,13,2,False,False,False,False,False,None
+Mr. Shaun Mahlangu,Person,18,3,False,False,False,False,True,None
+Mrs NHLANHLA JOUBERT,Person,20,3,False,False,False,False,False,None
+babalwa hall,Person,12,2,False,False,False,False,False,None
+Belinda Joubert,Person,15,2,False,False,False,False,False,None
+technological university (dawei),University,32,3,False,False,False,False,True,None
+Brockie Hourihane,Person,17,2,False,False,False,False,False,None
+Sherri Caldicot,Person,15,2,False,False,False,False,False,None
+Mr HEROLD CUNDEY,Person,16,3,False,False,False,False,False,None
+Birgitta Chaves,Person,15,2,False,False,False,False,False,None
+andréa karsh,Person,12,2,False,False,False,False,False,None
+twimbo AG,Company,9,2,False,False,False,False,False,None
+arthur hill,Person,11,2,False,False,False,False,False,None
+nonkululeko may,Person,15,2,False,False,False,False,False,None
+Lynette Move,Person,12,2,False,False,False,False,False,None
+Jessa Keaveney,Person,14,2,False,False,False,False,False,None
+MR sello van aswegen,Person,20,4,False,False,False,False,False,None
+mashudu adam,Person,12,2,False,False,False,False,False,None
+DR. Russell Mabasa,Person,18,3,True,False,False,False,True,DR.
+KARNATAKA STATE OPEN UNIVERSITY,University,31,4,False,False,True,False,False,None
+Hatti Reaveley,Person,14,2,False,False,False,False,False,None
+mtn business kenya ltd,Company,22,4,False,True,False,False,False,None
+Jaquith Riolfi,Person,14,2,False,False,False,False,False,None
+Sr. MATTHEW MANUEL,Company,18,3,False,False,False,False,True,None
+DR ASHLEY ZULU,Person,14,3,False,False,True,False,False,None
+danièle marcus,Person,14,2,False,False,False,False,False,None
+Edwin Van Den Heever,Person,20,4,False,False,False,False,False,None
+MRS rev. shawn botes,Person,20,4,False,False,False,False,True,None
+Andrea Hamill,Person,13,2,False,False,False,False,False,None
+Babalwa Van Wyk,Person,15,3,False,False,False,False,False,None
+PATRICIA LOTTERING,Person,18,2,False,False,True,False,False,None
+Mydo Pty,Company,8,2,False,True,False,False,False,None
+BAREND NGUBANE,Person,14,2,False,False,True,False,False,None
+MISS susan marshall,Person,19,3,False,False,False,False,False,None
+Photobean KAYVEO Yakitri Pty,Company,28,4,False,True,False,False,False,None
+Park Gateway Airport Pl,Company,23,4,False,False,False,False,False,None
+SHERIE O'FINAN,Person,14,2,False,False,True,False,True,None
+Mizuho Insurance Co Ltd,Company,23,4,False,True,False,False,False,None
+miss lynette ally,Person,17,3,False,False,False,False,False,None
+chelsey mapstone,Person,16,2,False,False,False,False,False,None
+Mr Faith De Wet,Person,15,4,False,False,False,False,False,None
+Océanne Cornwell,Person,16,2,False,False,False,False,False,None
+RÉSERVÉS LITTLECHILD,Company,20,2,False,False,True,False,False,None
+Mrs NICKO TREVETT,Person,17,3,False,False,False,False,False,None
+Clémentine Sante,Person,16,2,False,False,False,False,False,None
+LINDIWE KELLY,Person,13,2,False,False,True,False,False,None
+hon. sibongile pietersen,Person,24,3,False,False,False,False,True,None
+Alisha Selcraig,Person,15,2,False,False,False,False,False,None
+Miss Katuscha Malkie,Person,20,3,False,False,False,False,False,None
+Miss CONSTANCE WALFORD,Person,22,3,False,False,False,False,False,None
+Yolanda Williams,Person,16,2,False,False,False,False,False,None
+nkosinathi de wet,Person,17,3,False,False,False,False,False,None
+prof. nkosinathi martin,Person,23,3,False,False,False,False,True,None
+Ninon Simony,Person,12,2,False,False,False,False,False,None
+GAÏA BRECKEN,Person,12,2,False,False,True,False,False,None
+Alfred Otto,Person,11,2,False,False,False,False,False,None
+LUIGI STONARY,Person,13,2,False,False,True,False,False,None
+MS Hon. Mogamat Mavuso,Person,22,4,False,False,False,False,True,None
+rhynoodle twitterlist TOPICBLAB Bubblebox Pty (Ltd),Company,51,6,False,True,False,False,True,None
+GIBEX:INTERNAL,Company,14,1,False,False,True,False,True,None
+Kabelo Barnes,Person,13,2,False,False,False,False,False,None
+MS dave human,Person,13,3,False,False,False,False,False,None
+jonell adan,Person,11,2,False,False,False,False,False,None
+TECHNOLOGICAL UNIVERSITY (MYEIK),University,32,3,False,False,True,False,True,None
+thomas mcclymond,Company,16,2,False,False,False,False,False,None
+BRANDON OOSTHUIZEN,Person,18,2,False,False,True,False,False,None
+WOMEN'S UNIVERSITY IN AFRICA,University,28,4,False,False,True,False,True,None
+sizwe mtshali,Person,13,2,False,False,False,False,False,None
+Célestine Farahar,Person,17,2,False,False,False,False,False,None
+takalani padayachee,Person,19,2,False,False,False,False,False,None
+WORD OF LOVE INTERNATIONAL MINISTRY (ASS INC UND SEC 21)T,Company,57,10,False,True,True,True,True,None
+vivia omond,Person,11,2,False,False,False,False,False,None
+Yolandi Mamabolo,Person,16,2,False,False,False,False,False,None
+Anna-diana Berridge,Person,19,2,False,False,False,False,True,None
+Eugene Naidu,Person,12,2,False,False,False,False,False,None
+MISS PROF. SIMPHIWE POTGIETER,Person,29,4,False,False,True,False,True,None
+jacqueline solomon,Person,18,2,False,False,False,False,False,None
+Deborah Makhubela,Person,17,2,False,False,False,False,False,None
+REV. LOUIS RICHARDS,Person,19,3,True,False,True,False,True,REV.
+refiloe jacobs,Person,14,2,False,False,False,False,False,None
+Benn Feighney,Person,13,2,False,False,False,False,False,None
+Sr. shannon wilson,Person,18,3,False,False,False,False,True,None
+Leon Jackson,Person,12,2,False,False,False,False,False,None
+Mr Dr. Andries Kotze,Person,20,4,False,False,False,False,True,None
+vérane itzhaki,Person,14,2,False,False,False,False,False,None
+DR ruth khosa,Person,13,3,False,False,False,False,False,None
+Avavee Avavee Yambee Oodoo Company,Company,34,5,False,False,False,False,False,None
+HELEN NTOMBELA,Company,14,2,False,False,True,False,False,None
+Adriaan Africa,Person,14,2,False,False,False,False,False,None
+thomas letsoalo,Person,15,2,False,False,False,False,False,None
+Instituto Politécnico Nacional,University,30,3,False,False,False,False,False,None
+Mrs TEDDY BETTLES,Person,17,3,False,False,False,False,False,None
+Mrs. Krispin Village,Person,20,3,False,False,False,False,True,None
+HÉLÈNE COAN,Person,11,2,False,False,True,False,False,None
+JOE PATEL,Person,9,2,False,False,True,False,False,None
+CHAMPLAIN COLLEGE,University,17,2,False,False,True,False,False,None
+Demimbu Company,Company,15,2,False,False,False,False,False,None
+MIGUEL BORTOLAZZI,Person,17,2,False,False,True,False,False,None
+thabang koekemoer,Person,17,2,False,False,False,False,False,None
+MISS NOMPUMELELO MOODLEY,Person,24,3,False,False,True,False,False,None
+DR Mrs. Nonkululeko Mathe,Person,25,4,False,False,False,False,True,None
+elvyn kohlerman,Person,15,2,False,False,False,False,False,None
+Marlyn Pymar,Person,12,2,False,False,False,False,False,None
+JUDITH TERBLANCHE,Person,17,2,False,False,True,False,False,None
+lucy janny,Person,10,2,False,False,False,False,False,None
+FREDERICK CUPIDO,Person,16,2,False,False,True,False,False,None
+Zechariah Mac Gillavery,Person,23,3,False,False,False,False,False,None
+Francine Tasker,Person,15,2,False,False,False,False,False,None
+ZANDRA CANAS,Person,12,2,False,False,True,False,False,None
+Emalee Le Strange,Person,17,3,False,False,False,False,False,None
+Shawn James,Person,11,2,False,False,False,False,False,None
+stephanie van rensburg,Person,22,3,False,False,False,False,False,None
+Zandile Jordaan,Person,15,2,False,False,False,False,False,None
+DR. ZAMA NKUNA,Person,14,3,True,False,True,False,True,DR.
+REV. TO DE KLERK,Person,16,4,True,False,True,False,True,REV.
+minyx photobean skivee WIKIZZ Corp.,Company,35,5,False,True,False,False,True,None
+hogan tully,Person,11,2,False,False,False,False,False,None
+University Of Performing Arts In Bratislava,University,43,6,False,False,False,False,False,None
+MONX LTD,Company,8,2,False,True,True,False,False,None
+Shelly Pougher,Person,14,2,False,False,False,False,False,None
+Hon. Ivan Francis,Person,17,3,False,False,False,False,True,None
+Em Crayker,Person,10,2,False,False,False,False,False,None
+prof. margaret nkuna,Person,20,3,False,False,False,False,True,None
+Jazzy CAMIDO Meevee Incorporated,Company,32,4,False,False,False,False,False,None
+MRS Werner Moodley,Person,18,3,False,False,False,False,False,None
+HON. BABALWA ROBERTS,Company,20,3,True,False,True,False,True,HON.
+MRS Leonard Perumal,Person,19,3,False,False,False,False,False,None
+Dr. KARLIE GRAND,Person,16,3,False,False,False,False,True,None
+Trudy Mungan,Company,12,2,False,False,False,False,False,None
+Björn Harsant,Person,13,2,False,False,False,False,False,None
+Twiyo Tekfly dabvine Linkbuzz Incorporated,Company,42,5,False,False,False,False,False,None
+hon. etienne johnson,Company,20,3,False,False,False,False,True,None
+busisiwe zulu,Person,13,2,False,False,False,False,False,None
+Kelly Details,Person,13,2,False,False,False,False,False,None
+miss Audréanne Coultar,Person,22,3,False,False,False,False,False,None
+Prof. Edwin Potgieter,Person,21,3,False,False,False,False,True,None
+Mrs. Charmaine Boshoff,Person,22,3,False,False,False,False,True,None
+mada hammerstone,Person,16,2,False,False,False,False,False,None
+DR. MRS. NATALIE MAY,Person,20,4,True,False,True,False,True,DR.
+Mr Brian Van Niekerk,Person,20,4,False,False,False,False,False,None
+BRYAN VAN DEN HEEVER,Person,20,4,False,False,True,False,False,None
+PLAMBEE Incorporated,Company,20,2,False,False,False,False,False,None
+DR. Kabelo Mashinini,Person,20,3,True,False,False,False,True,DR.
+Sibusiso Moses,Person,14,2,False,False,False,False,False,None
+miss john marais,Person,16,3,False,False,False,False,False,None
+Mrs. Faunie Rummins,Person,19,3,False,False,False,False,True,None
+Cort Canton,Person,11,2,False,False,False,False,False,None
+Gaylord Iwanowicz,Person,17,2,False,False,False,False,False,None
+Rev. Christo Fourie,Person,19,3,False,False,False,False,True,None
+Deirdre Whorton,Person,15,2,False,False,False,False,False,None
+LÉN EASBIE,Person,10,2,False,False,True,False,False,None
+DR. skelly roswarne,Person,19,3,True,False,False,False,True,DR.
+LORINE THROUGHTON,Company,17,2,False,False,True,False,False,None
+LAWRENCE MATLALA,Person,16,2,False,False,True,False,False,None
+Darla Yannikov,Person,14,2,False,False,False,False,False,None
+MRS BÖRJE SCOULAR,Person,17,3,False,False,True,False,False,None
+Dr. Portia Wolmarans,Person,20,3,False,False,False,False,True,None
+NICHOLAS NELSON,Person,15,2,False,False,True,False,False,None
+Mr ABIGAIL NKABINDE,Person,19,3,False,False,False,False,False,None
+CHAIM ASBURY,Person,12,2,False,False,True,False,False,None
+MS DANETTE TRETHOWAN,Company,20,3,False,False,True,False,False,None
+BUBBLETUBE Jazzy Browsezoom Children Trust,Company,42,5,False,False,False,False,False,None
+Patrick Du Plooy,Person,16,3,False,False,False,False,False,None
+Sr. Agnès Waskett,Person,17,3,False,False,False,False,True,None
+Intéressant Moyle,Person,17,2,False,False,False,False,False,None
+Mellicent Houldin,Person,17,2,False,False,False,False,False,None
+JUDITH MOOSA,Person,12,2,False,False,True,False,False,None
+Dr. ms. anne grobler,Person,20,4,False,False,False,False,True,None
+TAKALANI MAGAGULA,Person,17,2,False,False,True,False,False,None
+wikizz Jetwire Pty,Company,18,3,False,True,False,False,False,None
+Robyn Fisher,Person,12,2,False,False,False,False,False,None
+Mr. nkosinathi hlophe,Person,21,3,False,False,False,False,True,None
+DR Friederike Wignall,Person,21,3,False,False,False,False,False,None
+MARLENE DU PLESSIS,Person,18,3,False,False,True,False,False,None
+MISS collen winnister,Person,21,3,False,False,False,False,False,None
+Taryn Mitchell,Person,14,2,False,False,False,False,False,None
+MICHAIL CULHAM,Company,14,2,False,False,True,False,False,None
+RASMALA BAG MANUFACTURING LTD,Company,29,4,False,True,True,False,False,None
+Mr. ms. danielle beukes,Person,23,4,False,False,False,False,True,None
+desiree ngcobo,Person,14,2,False,False,False,False,False,None
+MR. ANDREW MALAN,Person,16,3,True,False,True,False,True,MR.
+Deborah Perumal,Person,15,2,False,False,False,False,False,None
+MÅNS HORSLEY,Person,12,2,False,False,True,False,False,None
+Pénélope Scardefield,Company,20,2,False,False,False,False,False,None
+miléna lambertazzi,Person,18,2,False,False,False,False,False,None
+Frederick Dhlamini,Person,18,2,False,False,False,False,False,None
+miss rev. desiree wood,Person,22,4,False,False,False,False,True,None
+SYLVIA PRINSLOO,Person,15,2,False,False,True,False,False,None
+emmery townsley,Person,15,2,False,False,False,False,False,None
+celeste peter,Person,13,2,False,False,False,False,False,None
+Miss lexine fantonetti,Person,22,3,False,False,False,False,False,None
+kwimbee Group,Company,13,2,False,False,False,False,False,None
+victor mostert,Person,14,2,False,False,False,False,False,None
+Mr. Kelebogile Geldenhuys,Person,25,3,False,False,False,False,True,None
+Curtice Kerridge,Person,16,2,False,False,False,False,False,None
+DR märta mcgaughey,Company,18,3,False,False,False,False,False,None
+universidad panamericana de san salvador,University,40,5,False,False,False,False,False,None
+Justin Mabena,Person,13,2,False,False,False,False,False,None
+MRS Dafnée Epelett,Person,18,3,False,False,False,False,False,None
+chrystel sollowaye,Person,18,2,False,False,False,False,False,None
+MARY MLAMBO,Person,11,2,False,False,True,False,False,None
+DR. GUGU RIKHOTSO,Person,17,3,True,False,True,False,True,DR.
+Nime leggings Pl,Company,16,3,False,False,False,False,False,None
+MRS SELLO JACKSON,Person,17,3,False,False,True,False,False,None
+Miss dimitry mosson,Person,19,3,False,False,False,False,False,None
+Abcd Construction Sierra Leone Ltd,Company,34,5,False,True,False,False,False,None
+Mrs. Ms. lindiwe Mthembu,Person,24,4,False,False,False,False,True,None
+THABISO ROSSOUW,Person,15,2,False,False,True,False,False,None
+Sr. irene letsoalo,Person,18,3,False,False,False,False,True,None
+DR Henry Hill,Person,13,3,False,False,False,False,False,None
+Cull Baxstar,Person,12,2,False,False,False,False,False,None
+Mr. Sibusiso Prinsloo,Person,21,3,False,False,False,False,True,None
+Yvonne Enslin,Person,13,2,False,False,False,False,False,None
+PROF. NTOKOZO ESTERHUIZEN,Person,25,3,True,False,True,False,True,PROF.
+tagopia Dynazzy LLC.,Company,20,3,False,True,False,False,True,None
+Dr TIMMY WILBORE,Person,16,3,False,False,False,False,False,None
+LINKLINKS JETPULSE jamia UnLtd,Company,30,4,False,False,False,False,False,None
+MRS THEMBI MOOSA,Person,16,3,False,False,True,False,False,None
+jamison iannelli,Person,16,2,False,False,False,False,False,None
+carl ferreira,Person,13,2,False,False,False,False,False,None
+prof. heinrich mabasa,Person,21,3,False,False,False,False,True,None
+Dr. thor grayshan,Person,17,3,False,False,False,False,True,None
+Andrew Phiri,Person,12,2,False,False,False,False,False,None
+robow business consul c c,Company,25,5,False,False,False,False,False,None
+Sr. Jamie Pullar,Person,16,3,False,False,False,False,True,None
+Skibox PTY Limited,Company,18,3,False,True,False,False,False,None
+Michelle Mahlangu,Person,17,2,False,False,False,False,False,None
+MS UNATHI ARENDSE,Person,17,3,False,False,True,False,False,None
+EMELEN KENDER,Person,13,2,False,False,True,False,False,None
+CAREL VISAGIE,Company,13,2,False,False,True,False,False,None
+University Canada West,University,22,3,False,False,False,False,False,None
+Gus Cockburn,Person,12,2,False,False,False,False,False,None
+Miss Waly Bartelet,Company,18,3,False,False,False,False,False,None
+next taylor,Person,11,2,False,False,False,False,False,None
+Refilwe Radebe,Person,14,2,False,False,False,False,False,None
+Kaymbo C.C.,Company,11,2,False,False,False,False,True,None
+RAYMOND ERASMUS,Person,15,2,False,False,True,False,False,None
+ANNA JACOBS,Person,11,2,False,False,True,False,False,None
+Neil Anderson,Person,13,2,False,False,False,False,False,None
+Gail Dlamini,Person,12,2,False,False,False,False,False,None
+ALEXA BAVERSOR,Person,14,2,False,False,True,False,False,None
+CHRIS KELSHAW,Person,13,2,False,False,True,False,False,None
+Angelique Jones,Person,15,2,False,False,False,False,False,None
+DENYS GHERARDESCI,Person,17,2,False,False,True,False,False,None
+Maëlann Youngs,Person,14,2,False,False,False,False,False,None
+MS. ANNE HLONGWANE,Person,18,3,True,False,True,False,True,MS.
+Prof. rené majola,Person,17,3,False,False,False,False,True,None
+kennie wincom,Person,13,2,False,False,False,False,False,None
+MRS COOPER PEDRAZZI,Person,19,3,False,False,True,False,False,None
+Prof. Jacques Barnard,Person,21,3,False,False,False,False,True,None
+rooxo Fund,Company,10,2,False,False,False,False,False,None
+Linea Jirusek,Person,13,2,False,False,False,False,False,None
+alis guilliatt,Person,14,2,False,False,False,False,False,None
+Hertha Emerson,Person,14,2,False,False,False,False,False,None
+Miss Miléna Philippet,Person,21,3,False,False,False,False,False,None
+Sòng Mc Keighen,Person,15,3,False,False,False,False,False,None
+ADÉLAÏDE ROKE,Person,13,2,False,False,True,False,False,None
+YOUR TSOTETSI,Person,13,2,False,False,True,False,False,None
+Marlane Blandamore,Person,18,2,False,False,False,False,False,None
+Miss Arabele Bew,Person,16,3,False,False,False,False,False,None
+Miss jocko lagen,Person,16,3,False,False,False,False,False,None
+Angélique Romei,Person,15,2,False,False,False,False,False,None
+Mr. Dougy Panketh,Person,17,3,False,False,False,False,True,None
+UNIVERSIDAD CENTRAL DE NICARAGUA,University,32,4,False,False,True,False,False,None
+Lucky Ntombela,Person,14,2,False,False,False,False,False,None
+Nompumelelo Willemse,Person,20,2,False,False,False,False,False,None
+Fliptune REALLINKS YADEL Partnership,Company,36,4,False,False,False,False,False,None
+PROF. TSHEPO VISSER,Person,19,3,True,False,True,False,True,PROF.
+ORIENT RAISE HK INTL TRADING L,Company,30,6,False,False,True,False,False,None
+Marina Tuft,Person,11,2,False,False,False,False,False,None
+MS Wanids Nanuccioi,Person,19,3,False,False,False,False,False,None
+Mrs. Jonas MacGinley,Company,20,3,False,False,False,False,True,None
+Shelby Olliver,Person,14,2,False,False,False,False,False,None
+Dr Laurène Moncarr,Person,18,3,False,False,False,False,False,None
+mynte YAKIJO Browsedrive Jaxbean Pty,Company,36,5,False,True,False,False,False,None
+Mrs. Laura Move,Person,15,3,False,False,False,False,True,None
+Elaina Stare,Person,12,2,False,False,False,False,False,None
+skilith DEVPOINT Avamm Gmbh Co.,Company,31,5,False,False,False,False,True,None
+Ms. Nadine Joseph,Person,17,3,False,False,False,False,True,None
+Ronald Cronje,Person,13,2,False,False,False,False,False,None
+Cindy Hadebe,Person,12,2,False,False,False,False,False,None
+DABZ Feedfish inc.,Company,18,3,False,True,False,False,True,None
+Frederick Pillay,Person,16,2,False,False,False,False,False,None
+DR. gösta sterke,Person,16,3,True,False,False,False,True,DR.
+prof. etienne kotze,Person,19,3,False,False,False,False,True,None
+prof. tony mamabolo,Person,19,3,False,False,False,False,True,None
+Mr thandeka maleka,Person,18,3,False,False,False,False,False,None
+marie-ann simon,Person,15,2,False,False,False,False,True,None
+Edwina Leneve,Person,13,2,False,False,False,False,False,None
+Prof. Sandile Odendaal,Person,22,3,False,False,False,False,True,None
+RUDI NKABINDE,Person,13,2,False,False,True,False,False,None
+Vusi Koekemoer,Person,14,2,False,False,False,False,False,None
+Sr. ronald john,Person,15,3,False,False,False,False,True,None
+TWITTERWORKS Zoomcast layo MYNTE Inc,Company,36,5,False,True,False,False,False,None
+KELLY THOMAS,Person,12,2,False,False,True,False,False,None
+peter msibi,Person,11,2,False,False,False,False,False,None
+Lydia Mngomezulu,Person,16,2,False,False,False,False,False,None
+Bernelle Hoston,Person,15,2,False,False,False,False,False,None
+Elle McEvilly,Person,13,2,False,False,False,False,False,None
+DR Dr. tumelo Ndebele,Person,21,4,False,False,False,False,True,None
+Sr. NONNA DUFAUR,Person,16,3,False,False,False,False,True,None
+Prof. bruce hattingh,Person,20,3,False,False,False,False,True,None
+miss philip nelson,Person,18,3,False,False,False,False,False,None
+Gigaclub QUATZ Devbug Skipstorm Corp,Company,36,5,False,True,False,False,False,None
+NONKULULEKO VAN DER LINDE,Person,25,4,False,False,True,False,False,None
+Marie Ève Hallows,Person,17,3,False,False,False,False,False,None
+gillian brits,Person,13,2,False,False,False,False,False,None
+SHIRLEY MOONSAMY,Person,16,2,False,False,True,False,False,None
+MORNA MOORRUD,Person,13,2,False,False,True,False,False,None
+MS HON. ZELDA NEETHLING,Person,23,4,False,False,True,False,True,None
+Jacob Ndlovu,Person,12,2,False,False,False,False,False,None
+Robyn Bester,Person,12,2,False,False,False,False,False,None
+Phedra Stennings,Person,16,2,False,False,False,False,False,None
+zelda moloto,Person,12,2,False,False,False,False,False,None
+EPIC SIBAYA JV,Company,14,3,False,False,True,False,False,None
+Lesli Cooch,Person,11,2,False,False,False,False,False,None
+Skipfire Flashdog quinu Pty,Company,27,4,False,True,False,False,False,None
+FRÉDÉRIQUE NEAMES,Person,17,2,False,False,True,False,False,None
+Rev. Lee-ann Modise,Company,19,3,False,False,False,False,True,None
+CLEVEY HALLITT,Person,14,2,False,False,True,False,False,None
+hon. kagiso shabalala,Person,21,3,False,False,False,False,True,None
+LEBOHANG LEE,Person,12,2,False,False,True,False,False,None
+Franny Damarell,Person,15,2,False,False,False,False,False,None
+MISS Naëlle Honatsch,Person,20,3,False,False,False,False,False,None
+GORDON RAYNARD,Person,14,2,False,False,True,False,False,None
+Stephan Adam,Person,12,2,False,False,False,False,False,None
+HENDRIK XABA,Person,12,2,False,False,True,False,False,None
+mélinda schmidt,Person,15,2,False,False,False,False,False,None
+rev. julian kumar,Person,17,3,False,False,False,False,True,None
+robyn tshabalala,Person,16,2,False,False,False,False,False,None
+Prince Msibi,Person,12,2,False,False,False,False,False,None
+theadora calfe,Person,14,2,False,False,False,False,False,None
+ruddie togher,Person,13,2,False,False,False,False,False,None
+Dr bria lamba,Person,13,3,False,False,False,False,False,None
+teddy donett,Person,12,2,False,False,False,False,False,None
+Mrs. PRYCE VANKEEV,Person,18,3,False,False,False,False,True,None
+Martin Robinson,Company,15,2,False,False,False,False,False,None
+Themba Blignaut,Person,15,2,False,False,False,False,False,None
+MRS RONNA RUTLEDGE,Person,18,3,False,False,True,False,False,None
+Dr. Jabulani Maritz,Person,19,3,False,False,False,False,True,None
+MALCOLM VAN DER LINDE,Person,21,4,False,False,True,False,False,None
+sella whichelow,Person,15,2,False,False,False,False,False,None
+Mandy Madonsela,Person,15,2,False,False,False,False,False,None
+Clare Dyott,Person,11,2,False,False,False,False,False,None
+REV. VUYOKAZI THOMPSON,Person,22,3,True,False,True,False,True,REV.
+Mrs. CAROLIN CLEMITS,Person,20,3,False,False,False,False,True,None
+Vincent Pietersen,Person,17,2,False,False,False,False,False,None
+sutherland alibone,Person,18,2,False,False,False,False,False,None
+Fraser Cornillot,Person,16,2,False,False,False,False,False,None
+ESBJÖRN PALFREEMAN,Person,18,2,False,False,True,False,False,None
+DR ben pillay,Person,13,3,False,False,False,False,False,None
+prof. lucky labuschagne,Person,23,3,False,False,False,False,True,None
+Mrs Alicia Koekemoer,Person,20,3,False,False,False,False,False,None
+Alex Roux,Person,9,2,False,False,False,False,False,None
+Wikibox Limited.,Company,16,2,False,False,False,False,True,None
+Sr. YVONNE BOTHMA,Person,17,3,False,False,False,False,True,None
+Thérèsa Aguirre,Person,15,2,False,False,False,False,False,None
+KEVIN MOFOKENG,Person,14,2,False,False,True,False,False,None
+dr. brenda john,Person,15,3,False,False,False,False,True,None
+kabelo fourie,Person,13,2,False,False,False,False,False,None
+KELEBOGILE MASHEGO,Person,18,2,False,False,True,False,False,None
+Topiczoom blogpad TOPICZOOM CC,Company,30,4,False,False,False,False,False,None
+francois mabuza,Person,15,2,False,False,False,False,False,None
+marthinus manamela,Person,18,2,False,False,False,False,False,None
+flipopia Pl,Company,11,2,False,False,False,False,False,None
+MEGAN ROSS,Person,10,2,False,False,True,False,False,None
+Louie Doyle,Person,11,2,False,False,False,False,False,None
+Gilligan Loy,Person,12,2,False,False,False,False,False,None
+Yoshi Lorimer,Person,13,2,False,False,False,False,False,None
+gloria bouwer,Company,13,2,False,False,False,False,False,None
+Ms. Julie Jordaan,Company,17,3,False,False,False,False,True,None
+Nompumelelo Esterhuizen,Person,23,2,False,False,False,False,False,None
+VICTOR SLABBERT,Person,15,2,False,False,True,False,False,None
+NAÉVA DONAN,Person,11,2,False,False,True,False,False,None
+Kobus Arendse,Person,13,2,False,False,False,False,False,None
+DR maëly varsey,Person,15,3,False,False,False,False,False,None
+Prof. Carel Motaung,Person,19,3,False,False,False,False,True,None
+HULDA CANLIN,Person,12,2,False,False,True,False,False,None
+eloïse arran,Person,12,2,False,False,False,False,False,None
+Mr THABANG JANSEN VAN VUUREN,Person,28,5,False,False,False,False,False,None
+SMITH CORNELISSE,Person,16,2,False,False,True,False,False,None
+SHERRI FEEHAM,Person,13,2,False,False,True,False,False,None
+hon. brent herbst,Person,17,3,False,False,False,False,True,None
+MS Mrs. Yvette Kruger,Person,21,4,False,False,False,False,True,None
+Any Edwins,Person,10,2,False,False,False,False,False,None
+Sr. dr. jane carstens,Person,21,4,False,False,False,False,True,None
+clive nell,Person,10,2,False,False,False,False,False,None
+JULIANA CHAIM,Company,13,2,False,False,True,False,False,None
+Mr. Stefan Bester,Person,17,3,False,False,False,False,True,None
+FIKILE NDEBELE,Company,14,2,False,False,True,False,False,None
+Prof. Nthabiseng Mnguni,Person,23,3,False,False,False,False,True,None
+PROF. JOHANNES MHLANGA,Person,22,3,True,False,True,False,True,PROF.
+hon. vernon lewis,Person,17,3,False,False,False,False,True,None
+MS BABS IMLOCK,Person,14,3,False,False,True,False,False,None
+gabie trighton,Person,14,2,False,False,False,False,False,None
+BLOGSPAN ntag Photobug PTY LTD,Company,30,5,False,True,False,False,False,None
+MRS Dr. Marco Mchunu,Person,20,4,False,False,False,False,True,None
+Dr CAROLINE XABA,Person,16,3,False,False,False,False,False,None
+Andre Schutte,Person,13,2,False,False,False,False,False,None
+Zazio TRILIA Mynte Youopia LLC.,Company,31,5,False,True,False,False,True,None
+Andries Letsoalo,Person,16,2,False,False,False,False,False,None
+Kevin Davies,Person,12,2,False,False,False,False,False,None
+valle rymmer,Person,12,2,False,False,False,False,False,None
+Ly Klehyn,Person,9,2,False,False,False,False,False,None
+Prof. desiree park,Person,18,3,False,False,False,False,True,None
+Mr JEAN JACKSON,Person,15,3,False,False,False,False,False,None
+Yorgos Frayn,Person,12,2,False,False,False,False,False,None
+MS Candice Ally,Person,15,3,False,False,False,False,False,None
+Desmond Mc Ilwrick,Person,18,3,False,False,False,False,False,None
+Mr marie-josée baythrop,Person,23,3,False,False,False,False,True,None
+CARLETON HEIFER,Person,15,2,False,False,True,False,False,None
+UNIVERSITY OF NORTHERN IOWA,University,27,4,False,False,True,False,False,None
+Sr. Tammy Hamm,Person,14,3,False,False,False,False,True,None
+MRS rev. bulelwa malan,Person,22,4,False,False,False,False,True,None
+Laurélie Cullity,Person,16,2,False,False,False,False,False,None
+Sr. KEVAN SHILSTONE,Person,19,3,False,False,False,False,True,None
+NHLANHLA LANGA,Person,14,2,False,False,True,False,False,None
+rev. vusi jansen van vuuren,Person,27,5,False,False,False,False,True,None
+Dr. thandeka Mahomed,Person,20,3,False,False,False,False,True,None
+Kelebogile Khan,Person,15,2,False,False,False,False,False,None
+Miss Anita Mnisi,Person,16,3,False,False,False,False,False,None
+De Hague,Person,8,2,False,False,False,False,False,None
+Christan Reyna,Person,14,2,False,False,False,False,False,None
+Johanna Maree,Person,13,2,False,False,False,False,False,None
+Keith Bouwer,Person,12,2,False,False,False,False,False,None
+LEEXO JABBERSTORM KIMIA Pty Ltd.,Company,32,5,False,True,False,False,True,None
+Victoria Moyo,Person,13,2,False,False,False,False,False,None
+Curcio Flisher,Person,14,2,False,False,False,False,False,None
+MRS Rev. Nkosinathi Lombard,Person,27,4,False,False,False,False,True,None
+Mrs. Ellen Dantesia,Person,19,3,False,False,False,False,True,None
+Crééz Le Strange,Person,16,3,False,False,False,False,False,None
+HEIDI SCHOLTZ,Person,13,2,False,False,True,False,False,None
+MISS PAUL LOMBARD,Person,17,3,False,False,True,False,False,None
+Desirée Dankersley,Person,18,2,False,False,False,False,False,None
+DR. Raddie D'orsay,Person,18,3,True,False,False,False,True,DR.
+Kazio Inc.,Company,10,2,False,True,False,False,True,None
+BGC RESOURCES INC,Person,17,3,False,True,True,False,False,None
+DR. Melantha Cantera,Person,20,3,True,False,False,False,True,DR.
+DEREK JORDAAN,Person,13,2,False,False,True,False,False,None
+Renesola South Africa Pty Ltd,Company,29,5,False,True,False,False,False,None
+Worth Haken,Person,11,2,False,False,False,False,False,None
+réservés macvey,Person,15,2,False,False,False,False,False,None
+Rev. Robyn Swanepoel,Person,20,3,False,False,False,False,True,None
+Sipho Sithole,Person,13,2,False,False,False,False,False,None
+DR. Janet Kotze,Person,15,3,True,False,False,False,True,DR.
+miss Miss Judith Basson,Person,23,4,False,False,False,False,False,None
+loïc wolfinger,Person,14,2,False,False,False,False,False,None
+Jae Seyfart,Person,11,2,False,False,False,False,False,None
+Keith Harrison,Person,14,2,False,False,False,False,False,None
+roomm centidel Meembee Dynava PLLC.,Company,35,5,False,False,False,False,True,None
+twinte Gmbh Co.,Company,15,3,False,False,False,False,True,None
+LEBOGANG MASEMOLA,Person,17,2,False,False,True,False,False,None
+Gareth Lawrenson,Person,16,2,False,False,False,False,False,None
+pincus baldung,Company,14,2,False,False,False,False,False,None
+KISSIAH RICIOPPO,Person,16,2,False,False,True,False,False,None
+Nicola Steyn,Person,12,2,False,False,False,False,False,None
+NEVILLE DETAILS,Person,15,2,False,False,True,False,False,None
+arleen phillis,Person,14,2,False,False,False,False,False,None
+DR EARVIN FERMOR,Person,16,3,False,False,True,False,False,None
+Noémie Cunliffe,Person,15,2,False,False,False,False,False,None
+georgetta michelotti,Person,20,2,False,False,False,False,False,None
+hon. tshegofatso molepo,Person,23,3,False,False,False,False,True,None
+méryl kilbride,Person,14,2,False,False,False,False,False,None
+IVONNE SEMARK,Person,13,2,False,False,True,False,False,None
+terry hawlgarth,Person,15,2,False,False,False,False,False,None
+Nathanil Sargent,Person,16,2,False,False,False,False,False,None
+Jilli Kearford,Person,14,2,False,False,False,False,False,None
+Prudential Trading,Person,18,2,False,False,False,False,False,None
+Mrs. Prof. Juan Modiba,Company,22,4,False,False,False,False,True,None
+wikido TRILITH Corp,Company,19,3,False,True,False,False,False,None
+LUIS ABRAMOVITZ,Person,15,2,False,False,True,False,False,None
+Sr. Nosipho Mchunu,Company,18,3,False,False,False,False,True,None
+Karabo Pillay,Person,13,2,False,False,False,False,False,None
+Technological University (Taungoo),University,34,3,False,False,False,False,True,None
+IMIBONO FUELS PTY LTD,Company,21,4,False,True,True,False,False,None
+Mrs. STEPHAN ESTERHUIZEN,Person,24,3,False,False,False,False,True,None
+Mrs. Nonkululeko Mahomed,Person,24,3,False,False,False,False,True,None
+Mrs. PATRICIA DAVIES,Person,20,3,False,False,False,False,True,None
+Carol Maseko,Person,12,2,False,False,False,False,False,None
+miss JUNETTE CERIE,Person,18,3,False,False,False,False,False,None
+André Nettles,Person,13,2,False,False,False,False,False,None
+DR. BARRY ZUMA,Person,14,3,True,False,True,False,True,DR.
+HON. FRANCIS LEGODI,Person,19,3,True,False,True,False,True,HON.
+Miss theresa labuschagne,Person,24,3,False,False,False,False,False,None
+YOVEO Consortium,Company,16,2,False,False,False,False,False,None
+Mrs. Lydia Brown,Person,16,3,False,False,False,False,True,None
+Wake Grinsdale,Person,14,2,False,False,False,False,False,None
+Mr vusi madonsela,Person,17,3,False,False,False,False,False,None
+MAÏLY GLAZYER,Person,13,2,False,False,True,False,False,None
+YAMBEE Skiptube Trudoo Pty (Ltd),Company,32,5,False,True,False,False,True,None
+Irène Klaves,Person,12,2,False,False,False,False,False,None
+Prof. Nadine Wessels,Person,20,3,False,False,False,False,True,None
+Steve Moloto,Person,12,2,False,False,False,False,False,None
+CHLOÉ GRUND,Person,11,2,False,False,True,False,False,None
+Disconnect Dynamics Pl,Company,22,3,False,False,False,False,False,None
+julie mabuza,Person,12,2,False,False,False,False,False,None
+SUSAN LUBBE,Person,11,2,False,False,True,False,False,None
+octavius furmenger,Person,18,2,False,False,False,False,False,None
+micaela fern,Person,12,2,False,False,False,False,False,None
+Thabiso Boshoff,Person,15,2,False,False,False,False,False,None
+Phip Stanier,Person,12,2,False,False,False,False,False,None
+CECILIA LOUW,Person,12,2,False,False,True,False,False,None
+prof. kim munyai,Person,16,3,False,False,False,False,True,None
+AIMBO TAGPAD Ooba Family Trust,Company,30,5,False,False,False,False,False,None
+Mellicent Murname,Person,17,2,False,False,False,False,False,None
+Nico Loubser,Person,12,2,False,False,False,False,False,None
+Kalinda Chorlton,Person,16,2,False,False,False,False,False,None
+jabulani harrison,Person,17,2,False,False,False,False,False,None
+Siyabonga Mthethwa,Person,18,2,False,False,False,False,False,None
+miss Nkululeko Mulder,Person,21,3,False,False,False,False,False,None
+Mrs Catherine Mncube,Person,20,3,False,False,False,False,False,None
+Sr. Monique Davies,Person,18,3,False,False,False,False,True,None
+DR Hon. Patrick Africa,Person,22,4,False,False,False,False,True,None
+Aubrey Dube,Company,11,2,False,False,False,False,False,None
+A AND R DEVELOPMENT SUPPLIES(PTY) LTD,Company,37,6,False,True,True,False,True,None
+Prof. Reina Faichnie,Person,20,3,False,False,False,False,True,None
+Hon. Nomfundo Mavuso,Company,20,3,False,False,False,False,True,None
+HON. ZANELE BLIGNAUT,Person,20,3,True,False,True,False,True,HON.
+Oliviero Kender,Person,15,2,False,False,False,False,False,None
+Miss Clim Ackerman,Person,18,3,False,False,False,False,False,None
+Marie Hélène Fist,Person,17,3,False,False,False,False,False,None
+Lerato Moore,Person,12,2,False,False,False,False,False,None
+Miss raimund mulcahy,Person,20,3,False,False,False,False,False,None
+OLIVIA OTTO,Company,11,2,False,False,True,False,False,None
+ANGELINA COVELEY,Person,16,2,False,False,True,False,False,None
+Dr Gösta Bacon,Person,14,3,False,False,False,False,False,None
+Mrs Leandra Penella,Person,19,3,False,False,False,False,False,None
+MISS gert moloto,Person,16,3,False,False,False,False,False,None
+Lorraine Errowe,Person,15,2,False,False,False,False,False,None
+RANDOLF KIRRENS,Company,15,2,False,False,True,False,False,None
+Cléopatre Erangey,Person,17,2,False,False,False,False,False,None
+Miss Katie Girvan,Person,17,3,False,False,False,False,False,None
+ENRICA HAYTER,Person,13,2,False,False,True,False,False,None
+Anabel Candlin,Person,14,2,False,False,False,False,False,None
+IVAN BEZUIDENHOUT,Person,17,2,False,False,True,False,False,None
+Liezel Britz,Person,12,2,False,False,False,False,False,None
+Miss Miss Nkosinathi Smith,Person,26,4,False,False,False,False,False,None
+CÉCILIA OGILBY,Person,14,2,False,False,True,False,False,None
+Miss Val Pheasey,Person,16,3,False,False,False,False,False,None
+Mrs. Angelique Herbst,Person,21,3,False,False,False,False,True,None
+Karlan Gerholz,Person,14,2,False,False,False,False,False,None
+CARMEN SIMPSON,Person,14,2,False,False,True,False,False,None
+Zooxo Foundation Trust,Company,22,3,False,False,False,False,False,None
+your liebenberg,Person,15,2,False,False,False,False,False,None
+Kenny Coursor,Company,13,2,False,False,False,False,False,None
+Adèle Blaza,Person,11,2,False,False,False,False,False,None
+Victor Engelbrecht,Person,18,2,False,False,False,False,False,None
+Mr. ANAËL RAHILL,Person,16,3,False,False,False,False,True,None
+Mark Xaba,Person,9,2,False,False,False,False,False,None
+Dr Tara Ovett,Person,13,3,False,False,False,False,False,None
+Faith Mathe,Person,11,2,False,False,False,False,False,None
+Sr. KARYLIN VILLAGE,Person,19,3,False,False,False,False,True,None
+KÙ SHIELDON,Person,11,2,False,False,True,False,False,None
+BABALWA BOOYSEN,Person,15,2,False,False,True,False,False,None
+TISH WYRILL,Person,11,2,False,False,True,False,False,None
+Next Swartz,Person,11,2,False,False,False,False,False,None
+PHOTOBUG OYONDER PLC.,Company,21,3,False,False,True,False,True,None
+petrus vosloo,Person,13,2,False,False,False,False,False,None
+ROOBBIE SIMAK,Person,13,2,False,False,True,False,False,None
+Jodi MacFaul,Person,12,2,False,False,False,False,False,None
+American University Of Tirana,University,29,4,False,False,False,False,False,None
+Mrs. Randie Aldous,Person,18,3,False,False,False,False,True,None
+TIFF CUMMUNGS,Person,13,2,False,False,True,False,False,None
+HON. LINDIWE WILLIAMS,Person,21,3,True,False,True,False,True,HON.
+Shelagh Puzey,Person,13,2,False,False,False,False,False,None
+ms. lebohang park,Person,17,3,False,False,False,False,True,None
+Rockwell Aston,Person,14,2,False,False,False,False,False,None
+edward van rensburg,Person,19,3,False,False,False,False,False,None
+Jeanette Moonsamy,Person,17,2,False,False,False,False,False,None
+Mr Andrew Lottering,Person,19,3,False,False,False,False,False,None
+Sr. lorène iorizzo,Person,18,3,False,False,False,False,True,None
+Coates Johnson Johnsons Pty Ltd,Company,31,5,False,True,False,False,False,None
+Gail Van Der Walt,Person,17,4,False,False,False,False,False,None
+DR. gail de jager,Person,17,4,True,False,False,False,True,DR.
+Prof. Lilyan Scarce,Person,19,3,False,False,False,False,True,None
+BRITTA BONNEY,Person,13,2,False,False,True,False,False,None
+Mrs. Pembroke Pollett,Person,21,3,False,False,False,False,True,None
+Dr. Jabulani Mashinini,Person,22,3,False,False,False,False,True,None
+BRENDA MTSHALI,Person,14,2,False,False,True,False,False,None
+Ms. Chantelle van Niekerk,Person,25,4,False,False,False,False,True,None
+Sissie Seeler,Person,13,2,False,False,False,False,False,None
+dr. miss ncube,Person,14,3,False,False,False,False,True,None
+Lindiwe Alberts,Person,15,2,False,False,False,False,False,None
+milena cristobal,Person,16,2,False,False,False,False,False,None
+michelle britz,Person,14,2,False,False,False,False,False,None
+Anne Corinne Tackes,Person,19,3,False,False,False,False,False,None
+TRACEE ERICSSEN,Person,15,2,False,False,True,False,False,None
+Miss VUSI MAHOMED,Company,17,3,False,False,False,False,False,None
+Andréanne Haldin,Person,16,2,False,False,False,False,False,None
+Dabshots BUBBLEMIX PLLC.,Company,24,3,False,False,False,False,True,None
+refilwe mtsweni,Person,15,2,False,False,False,False,False,None
+PROF. EUGENE MASEMOLA,Person,21,3,True,False,True,False,True,PROF.
+Mrs. BARBARA NGCOBO,Person,19,3,False,False,False,False,True,None
+shaun meyer,Person,11,2,False,False,False,False,False,None
+miss cupido,Person,11,2,False,False,False,False,False,None
+Miss Evey Shilstone,Person,19,3,False,False,False,False,False,None
+Mr Ricardo May,Company,14,3,False,False,False,False,False,None
+Miléna Ryde,Person,11,2,False,False,False,False,False,None
+YÓU WYLAM,Person,9,2,False,False,True,False,False,None
+HON. ESTELLE NDEBELE,Person,20,3,True,False,True,False,True,HON.
+Aubrey Mlangeni,Person,15,2,False,False,False,False,False,None
+Devin Matusov,Person,13,2,False,False,False,False,False,None
+MISS Nicol Gehrtz,Person,17,3,False,False,False,False,False,None
+Mrs MS. GRACE CHETTY,Person,20,4,False,False,False,False,True,None
+Xiangtan University,University,19,2,False,False,False,False,False,None
+skinder Partnership,Company,19,2,False,False,False,False,False,None
+IVAN MABASO,Company,11,2,False,False,True,False,False,None
+universidad santa paula,University,23,3,False,False,False,False,False,None
+LARI LEEL,Person,9,2,False,False,True,False,False,None
+DRU TICKSALL,Person,12,2,False,False,True,False,False,None
+Dr. mashudu Harrison,Person,20,3,False,False,False,False,True,None
+NATIONAL YANG MING MEDICAL COLLEGE,Company,34,5,False,False,True,False,False,None
+FEEDNATION Avaveo Community Trust,Company,33,4,False,False,False,False,False,None
+Devshare UnLtd,Company,14,2,False,False,False,False,False,None
+Dr. Bulelwa Lawrence,Person,20,3,False,False,False,False,True,None
+Mr. HETTIE MACKRO,Person,17,3,False,False,False,False,True,None
+MAÉNA WHIFFIN,Person,13,2,False,False,True,False,False,None
+Robin Janse van Rensburg,Person,24,4,False,False,False,False,False,None
+BLUE SKY LEISURE DEVELOPMENTS (PTY) LTD,Person,39,6,False,True,True,False,True,None
+Casey Daenen,Person,12,2,False,False,False,False,False,None
+Dr. Marylène Danzey,Person,19,3,False,False,False,False,True,None
+bianca zungu,Person,12,2,False,False,False,False,False,None
+Prof. camile brainsby,Person,21,3,False,False,False,False,True,None
+hon. lesego mngomezulu,Person,22,3,False,False,False,False,True,None
+DR. NONKULULEKO TWALA,Person,21,3,True,False,True,False,True,DR.
+Dr Claresta Finicj,Person,18,3,False,False,False,False,False,None
+Kwilith FEEDFIRE DABFEED fadeo inc.,Company,35,5,False,True,False,False,True,None
+MARTY LEAD,Person,10,2,False,False,True,False,False,None
+HENRY KEECH,Person,11,2,False,False,True,False,False,None
+MAÏLY CHAPIER,Person,13,2,False,False,True,False,False,None
+Stu O'Hearn,Person,11,2,False,False,False,False,True,None
+dr. themba moloto,Person,17,3,False,False,False,False,True,None
+Mita Kwilith Nlounge Pty,Company,24,4,False,True,False,False,False,None
+Louise Viljoen,Person,14,2,False,False,False,False,False,None
+Ráo Degoey,Person,10,2,False,False,False,False,False,None
+Your Neethling,Person,14,2,False,False,False,False,False,None
+jinny dovidian,Person,14,2,False,False,False,False,False,None
+MISS Judicaël Brunton,Person,21,3,False,False,False,False,False,None
+Musa Erasmus,Person,12,2,False,False,False,False,False,None
+JANYX VINTE edgeclub Tagopia Stg,Company,32,5,False,False,False,False,False,None
+MS Lindiwe Cooper,Person,17,3,False,False,False,False,False,None
+Herman and Julie Clothing Pl,Company,28,5,False,False,False,False,False,None
+Mrs. Contact Pillay,Person,19,3,False,False,False,False,True,None
+BILLYE LONDSDALE,Person,16,2,False,False,True,False,False,None
+NICOLAAS LOURENS,Person,16,2,False,False,True,False,False,None
+Dr casie ambrogetti,Person,19,3,False,False,False,False,False,None
+Dean Henning,Company,12,2,False,False,False,False,False,None
+Mrs. andré mofokeng,Person,19,3,False,False,False,False,True,None
+MRS Heather Petersen,Person,20,3,False,False,False,False,False,None
+Hon. Anne Gerber,Person,16,3,False,False,False,False,True,None
+Colleen Conradie,Person,16,2,False,False,False,False,False,None
+BIANKA SCHOLLER,Person,15,2,False,False,True,False,False,None
+Irène Piff,Person,10,2,False,False,False,False,False,None
+RIFFPEDIA Quinu Ainyx JAXWORKS Pty Ltd,Company,38,6,False,True,False,False,False,None
+ZANELE WILLIAMS,Person,15,2,False,False,True,False,False,None
+Robena Fallowfield,Person,18,2,False,False,False,False,False,None
+Mylène Newman,Person,13,2,False,False,False,False,False,None
+MERRILL LYNCH CAPITAL SERV INC,Company,30,5,False,True,True,False,False,None
+YOUFEED Yacero Aimbo Ltd,Company,24,4,False,True,False,False,False,None
+Dean Chetty,Person,11,2,False,False,False,False,False,None
