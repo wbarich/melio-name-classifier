@@ -1,0 +1,26 @@
+# Dockerfile for Frontend UI Server
+FROM python:3.9-slim
+
+# Set working directory
+WORKDIR /app
+
+# Copy requirements for UI server
+COPY requirements.txt .
+
+# Install only the necessary dependencies for the UI server
+RUN pip install --no-cache-dir fastapi uvicorn httpx jinja2
+
+# Copy the UI server to root of /app
+COPY src/simple_ui_server.py .
+
+# Copy templates directory to /app/templates (matches the path in simple_ui_server.py)
+COPY src/templates/ templates/
+
+# Expose port 8000 for the UI
+EXPOSE 8000
+
+# Set environment variable for the backend URL (can be overridden in docker-compose)
+ENV KSERVE_URL=http://name-classifier:8080
+
+# Run the UI server
+CMD ["python", "simple_ui_server.py"]

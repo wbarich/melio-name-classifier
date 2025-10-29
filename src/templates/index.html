@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name Classifier - KServe Demo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .header {
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            color: #333;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .header p {
+            color: #666;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+            text-align: left;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 15px 20px;
+            border: 2px solid #e1e5e9;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            background: #f8f9fa;
+        }
+
+        .form-group input:focus {
+            outline: none;
+            border-color: #667eea;
+            background: white;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        .btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin: 10px;
+            min-width: 150px;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+
+        .btn:active {
+            transform: translateY(0);
+        }
+
+        .btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .result {
+            margin-top: 30px;
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            min-height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .result.success {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+        }
+
+        .result.error {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+            color: white;
+        }
+
+        .result.loading {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+        }
+
+        .loading-spinner {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            border-top-color: white;
+            animation: spin 1s ease-in-out infinite;
+            margin-right: 10px;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .examples {
+            margin-top: 30px;
+            text-align: left;
+        }
+
+        .examples h3 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+
+        .example-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .example-list li {
+            background: #f8f9fa;
+            margin: 8px 0;
+            padding: 10px 15px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-left: 4px solid #667eea;
+        }
+
+        .example-list li:hover {
+            background: #e9ecef;
+            transform: translateX(5px);
+        }
+
+        .api-info {
+            margin-top: 30px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            text-align: left;
+        }
+
+        .api-info h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .api-info p {
+            color: #666;
+            font-size: 0.9rem;
+            margin: 5px 0;
+        }
+
+        .api-endpoint {
+            background: #e9ecef;
+            padding: 8px 12px;
+            border-radius: 5px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🏷️ Name Classifier</h1>
+            <p>Powered by KServe • Classify names as Person, Company, or University</p>
+        </div>
+
+        <form id="classifierForm">
+            <div class="form-group">
+                <label for="nameInput">Enter a name to classify:</label>
+                <input 
+                    type="text" 
+                    id="nameInput" 
+                    placeholder="e.g., John Smith, Apple Inc., Harvard University"
+                    required
+                >
+            </div>
+            
+            <button type="submit" class="btn" id="classifyBtn">
+                Classify Name
+            </button>
+            
+            <button type="button" class="btn" id="randomBtn" style="background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%); color: #333;">
+                Random Example
+            </button>
+        </form>
+
+        <div id="result" class="result" style="display: none;"></div>
+
+        <div class="examples">
+            <h3>Try these examples:</h3>
+            <ul class="example-list">
+                <li onclick="fillExample('John Smith')">John Smith</li>
+                <li onclick="fillExample('Apple Inc.')">Apple Inc.</li>
+                <li onclick="fillExample('Harvard University')">Harvard University</li>
+                <li onclick="fillExample('Microsoft Corporation')">Microsoft Corporation</li>
+                <li onclick="fillExample('Dr. Sarah Johnson')">Dr. Sarah Johnson</li>
+                <li onclick="fillExample('Stanford University')">Stanford University</li>
+            </ul>
+        </div>
+
+        <div class="api-info">
+            <h3>API Information</h3>
+            <p><strong>Model:</strong> name-classifier</p>
+            <p><strong>Endpoint:</strong></p>
+            <div class="api-endpoint">POST /v2/models/name-classifier/infer</div>
+            <p><strong>Health Check:</strong></p>
+            <div class="api-endpoint">GET /health</div>
+        </div>
+    </div>
+
+    <script>
+        const form = document.getElementById('classifierForm');
+        const nameInput = document.getElementById('nameInput');
+        const classifyBtn = document.getElementById('classifyBtn');
+        const randomBtn = document.getElementById('randomBtn');
+        const result = document.getElementById('result');
+
+        // Random examples for the random button
+        const randomExamples = [
+            'John Smith', 'Apple Inc.', 'Harvard University', 'Microsoft Corporation',
+            'Dr. Sarah Johnson', 'Stanford University', 'Google LLC', 'MIT',
+            'Jane Doe', 'Tesla Inc.', 'Oxford University', 'Amazon.com Inc.'
+        ];
+
+        // Fill input with example
+        function fillExample(name) {
+            nameInput.value = name;
+            nameInput.focus();
+        }
+
+        // Get random example
+        function getRandomExample() {
+            const randomName = randomExamples[Math.floor(Math.random() * randomExamples.length)];
+            fillExample(randomName);
+        }
+
+        // Show loading state
+        function showLoading() {
+            classifyBtn.disabled = true;
+            classifyBtn.innerHTML = '<div class="loading-spinner"></div>Classifying...';
+            result.style.display = 'flex';
+            result.className = 'result loading';
+            result.innerHTML = '<div class="loading-spinner"></div>Processing your request...';
+        }
+
+        // Show result
+        function showResult(classification, isError = false) {
+            classifyBtn.disabled = false;
+            classifyBtn.innerHTML = 'Classify Name';
+            
+            if (isError) {
+                result.className = 'result error';
+                result.innerHTML = `❌ Error: ${classification}`;
+            } else {
+                result.className = 'result success';
+                result.innerHTML = `✅ Classification: <strong>${classification}</strong>`;
+            }
+        }
+
+        // Make API call to KServe
+        async function classifyName(name) {
+            try {
+                const response = await fetch('/v2/models/name-classifier/infer', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        inputs: [{
+                            name: "name",
+                            shape: [1],
+                            datatype: "BYTES",
+                            data: [name]
+                        }]
+                    })
+                });
+
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+
+                const data = await response.json();
+                
+                // Extract classification from KServe response
+                if (data.outputs && data.outputs.length > 0) {
+                    const classification = data.outputs[0].data[0];
+                    showResult(classification);
+                } else {
+                    throw new Error('Invalid response format');
+                }
+
+            } catch (error) {
+                console.error('Error:', error);
+                showResult(`Failed to classify name: ${error.message}`, true);
+            }
+        }
+
+        // Handle form submission
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const name = nameInput.value.trim();
+            
+            if (!name) {
+                showResult('Please enter a name to classify', true);
+                return;
+            }
+
+            showLoading();
+            await classifyName(name);
+        });
+
+        // Handle random button
+        randomBtn.addEventListener('click', () => {
+            getRandomExample();
+        });
+
+        // Handle Enter key
+        nameInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                form.dispatchEvent(new Event('submit'));
+            }
+        });
+
+        // Focus input on load
+        nameInput.focus();
+    </script>
+</body>
+</html>
