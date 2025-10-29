@@ -15,6 +15,12 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy source code
 COPY src/ .
 
+# Copy trained models
+COPY models/ models/
+
+# Create directories for templates and static files
+RUN mkdir -p templates static
+
 # Expose port 8080 (KServe default HTTP port)
 EXPOSE 8080
 

@@ -1,4 +1,5 @@
 services:
+  # Backend API Server
   name-classifier:
     build:
       context: .
@@ -12,3 +13,23 @@ services:
         limits:
           cpus: '1'
           memory: 2G
+    networks:
+      - app-network
+
+  # Frontend UI Server
+  ui-server:
+    build:
+      context: .
+      dockerfile: Dockerfile.ui
+    ports:
+      - "8000:8000"
+    environment:
+      - KSERVE_URL=http://name-classifier:8080
+    depends_on:
+      - name-classifier
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
