@@ -4,7 +4,7 @@ A KServe-compliant HTTP API for classifying full names into one of three categor
 
 ## Project Overview
 
-This project implements a production-ready KServe V2 inference server that classifies names. The current implementation uses a **naive random classifier** as a placeholder to establish the end-to-end infrastructure. Future iterations will replace this with a trained machine learning model.
+This project implements a production-ready KServe V2 inference server that classifies names. The server loads a trained champion machine learning model selected via an internal model registry.
 
 ### Architecture
 
@@ -169,14 +169,7 @@ The Docker container is configured to match KServe requirements:
 
 ## Current Implementation
 
-### Naive Random Classifier
-
-The current classifier **randomly selects** one of the three categories for any input name. This is intentional to:
-
-1. Establish the end-to-end KServe infrastructure
-2. Validate Docker containerization
-3. Test API endpoints and V2 protocol compliance
-4. Provide a working baseline for iteration
+The server loads the current champion model from a lightweight registry in `models/model_registry.json`. The trained pipeline includes feature engineering (lexical features, character n-grams, optional embeddings) and a standard classifier (e.g., Logistic Regression, Random Forest, or an ensemble), chosen based on evaluation metrics.
 
 ### Model Pipeline
 
@@ -185,31 +178,12 @@ Input (name string)
   ↓
 preprocess()   # Extract name from V2 request
   ↓
-predict()      # Random classification (temporary)
+predict()      # Champion ML model inference
   ↓
 postprocess()  # Format to V2 response
   ↓
 Output (classification)
 ```
-
-## Future Improvements
-
-### Phase 1: Rule-Based Enhancement
-- Add keyword detection (e.g., "university", "Inc.", "Dr.")
-- Case analysis (ALL CAPS often indicates company)
-- Title prefix detection (Mr., Mrs., Prof.)
-
-### Phase 2: Machine Learning Model
-- Train on the provided dataset (4,520 samples)
-- TF-IDF vectorization + Logistic Regression
-- Feature engineering (name length, punctuation, etc.)
-- Cross-validation and metrics evaluation
-
-### Phase 3: Production Readiness
-- Model versioning
-- A/B testing infrastructure
-- Monitoring and observability
-- Performance optimization
 
 ## Development Notes
 
@@ -267,10 +241,8 @@ docker images name-classifier:latest
 4. Labels in training data may have some noise (mentioned in assignment)
 
 ### Trade-offs
-1. **Random classifier first** - Prioritized infrastructure over ML accuracy to establish end-to-end system quickly
-2. **KServe SDK vs pure Django** - Chose KServe SDK for native V2 protocol support and future scalability
-3. **No frontend UI** - Focused on core API functionality to maximize development time on infrastructure
-4. **CPU-only deployment** - No GPU requirements keep container lightweight
+1. KServe SDK for native V2 protocol support and future scalability
+2. CPU-only deployment keeps container lightweight
 
 ## Troubleshooting
 
@@ -343,7 +315,7 @@ This project is created for the Melio ML Engineer technical assessment.
 
 ## Next Steps
 
-1. **Iterate on the classifier** - Replace random logic with trained model
-2. **Evaluation metrics** - Implement accuracy, precision, recall tracking
-3. **Monitoring** - Add logging, metrics, and observability
-4. **Deploy to cloud** - Push Docker image to registry for production deployment
+1. Expand evaluation metrics (accuracy, precision, recall)
+2. Add monitoring and observability
+3. Enable model versioning and A/B testing
+4. Push Docker image to registry for deployment
