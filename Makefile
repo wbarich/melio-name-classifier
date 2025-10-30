@@ -84,6 +84,12 @@ test:
 	docker-compose down
 	@echo "✅ Tests complete"
 
+# Install Python dependencies (run once before tests if needed)
+install:
+	@echo "📦 Installing Python dependencies..."
+	python3 -m pip install -r requirements.txt
+	@echo "✅ Dependencies installed"
+
 # Train the model with embeddings in Docker (recommended)
 train-docker:
 	@echo "🚀 Training model with embeddings in Docker..."
