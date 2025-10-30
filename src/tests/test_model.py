@@ -106,17 +106,7 @@ class TestPredict:
                 assert "classification" in result
                 assert result["classification"] in ["Person", "Company", "University"]
 
-    def test_predict_is_random(self, model):
-        """Test that the current naive classifier produces varied results."""
-        # Run prediction multiple times with the same input
-        name = "Test Name"
-        data = {"name": name}
-        results = [model.predict(data)["classification"] for _ in range(20)]
-
-        # With random selection, we should see some variation in 20 tries
-        # (There's a very small chance this could fail with true randomness)
-        unique_results = set(results)
-        assert len(unique_results) > 1, "Random classifier should produce varied results"
+    # Removed: test_predict_is_random — project no longer uses a random classifier
 
     def test_predict_with_edge_cases(self, model, edge_case_names):
         """Test prediction with edge case names."""
@@ -207,8 +197,7 @@ class TestEndToEnd:
         prediction = model.predict(preprocessed)
         response = model.postprocess(prediction)
 
-        # Verify the name was processed (we can't verify exact classification due to randomness)
-        # But we can verify the structure is correct
+        # Verify the structure is correct and a classification was produced
         assert response.outputs[0].name == "classification"
         assert len(response.outputs[0].data) == 1
         assert isinstance(response.outputs[0].data[0], str)

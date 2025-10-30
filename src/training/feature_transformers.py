@@ -449,7 +449,7 @@ class DataPreprocessor(BaseEstimator, TransformerMixin):
             if self.use_char_ngrams and self.char_ngram_extractor is not None:
                 self.char_ngram_extractor.fit(X_cleaned)
 
-            # NEW: Fit embedding extractor if enabled
+            # Fit embedding extractor if enabled
             if self.use_embeddings and self.embedding_extractor is not None:
                 logger.info("Fitting embedding transformer...")
                 self.embedding_extractor.fit(X_cleaned)
@@ -480,7 +480,7 @@ class DataPreprocessor(BaseEstimator, TransformerMixin):
                 # Combine features horizontally
                 features = pd.concat([features, char_ngram_features], axis=1)
 
-            # NEW: Extract embedding features if enabled
+            # Extract embedding features if enabled
             if self.use_embeddings and self.embedding_extractor is not None:
                 logger.info("Generating embeddings...")
                 embedding_features = self.embedding_extractor.transform(X_cleaned)
@@ -515,7 +515,7 @@ class DataPreprocessor(BaseEstimator, TransformerMixin):
                 # Combine features horizontally
                 features = pd.concat([features, char_ngram_features], axis=1)
 
-            # NEW: Extract embedding features if enabled
+            # Extract embedding features if enabled
             if self.use_embeddings and self.embedding_extractor is not None:
                 logger.info("Fitting and generating embeddings...")
                 embedding_features = self.embedding_extractor.fit_transform(X_cleaned)
@@ -542,7 +542,7 @@ class DataPreprocessor(BaseEstimator, TransformerMixin):
         if self.use_char_ngrams and self.char_ngram_extractor is not None:
             feature_names.extend(self.char_ngram_extractor.get_feature_names_out())
 
-        # NEW: Add embedding feature names if enabled
+        # Add embedding feature names if enabled
         if self.use_embeddings and self.embedding_extractor is not None:
             feature_names.extend(self.embedding_extractor.get_feature_names_out())
 

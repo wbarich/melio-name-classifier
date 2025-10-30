@@ -288,7 +288,7 @@ def display_confusion_matrix(y_true, y_pred, label_mapping, model_name):
         for j in range(len(class_names)):
             # Highlight diagonal (correct predictions)
             if i == j:
-                row.append(f"[bold green]{cm[i][j]}[/bold green]")
+                row.append(f"[bold]{cm[i][j]}[/bold]")
             else:
                 row.append(str(cm[i][j]))
         cm_table.add_row(*row)
@@ -419,7 +419,7 @@ def run():
         
         # Fit preprocessor on training data (includes embedding model download/fitting)
         console.print("🧹 Preprocessing training data with embeddings...")
-        console.print("   This may take a few minutes for first-time embedding model download...")
+        console.print("   First-time embedding model download may take a few minutes...")
         X_train_processed, y_train_encoded = preprocessor.fit_transform(X_train, y_train)
         
         # Transform test data
