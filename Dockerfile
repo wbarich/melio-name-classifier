@@ -8,6 +8,10 @@ WORKDIR /app
 # Copy requirements first for Docker layer caching
 COPY requirements.txt .
 
+# Install CPU-only PyTorch first to avoid downloading huge CUDA version
+# sentence-transformers depends on PyTorch, so we install CPU version explicitly
+RUN pip install --no-cache-dir torch --index-url https://download.pytorch.org/whl/cpu
+
 # Install Python dependencies
 # --no-cache-dir reduces image size
 RUN pip install --no-cache-dir -r requirements.txt

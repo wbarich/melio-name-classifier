@@ -1,6 +1,6 @@
 # Makefile for Name Classifier KServe Project
 
-.PHONY: help start stop restart logs status test train train-docker clean
+.PHONY: help start stop restart logs status test train train-docker clean test-aws
 
 # Default target - make Docker the easiest option
 help:
@@ -16,13 +16,12 @@ help:
 	@echo ""
 	@echo "📊 MONITORING:"
 	@echo "  make status        - Check if containers are running"
-	@echo "  make test          - Run all tests"
 	@echo ""
 	@echo "🤖 TRAINING:"
 	@echo "  make train-docker  - Train with embeddings in Docker (recommended)"
 	@echo ""
-	@echo "🧹 UTILITIES:"
-	@echo "  make clean         - Clean up temporary files"
+	@echo "🌐 AWS DEPLOYMENT:"
+	@echo "  make test-aws      - Test inference on AWS EC2 deployment"
 	@echo ""
 	@echo "📍 URLS (after running 'make start'):"
 	@echo "  Frontend UI:  http://localhost:8000"
@@ -75,14 +74,6 @@ status:
 # TESTING & TRAINING
 # ============================================================
 
-# Run tests
-test:
-	@echo "🧪 Running tests..."
-	docker-compose up -d
-	@sleep 5
-	python3 -m pytest src/tests/ -v
-	docker-compose down
-	@echo "✅ Tests complete"
 
 # Install Python dependencies (run once before tests if needed)
 install:
@@ -111,13 +102,19 @@ train-docker:
 	@echo "   make restart"
 
 # ============================================================
-# UTILITIES
+# AWS DEPLOYMENT TESTING
 # ============================================================
 
-# Clean up temporary files
-clean:
-	@echo "🧹 Cleaning up..."
-	find . -type d -name "__pycache__" -exec rm -rf {} + 2>/dev/null || true
-	find . -type d -name ".pytest_cache" -exec rm -rf {} + 2>/dev/null || true
-	find . -type f -name "*.pyc" -delete 2>/dev/null || true
-	@echo "✅ Cleanup complete"
+# Test inference on AWS EC2 deployment
+test-aws:
+	@echo "🌐 Testing AWS EC2 deployment..."
+	@echo ""
+	@echo "📍 Endpoint: http://3.136.23.88:8000/v2/models/name-classifier/infer"
+	@echo ""
+	curl -X POST http://3.136.23.88:8000/v2/models/name-classifier/infer \
+		-H "Content-Type: application/json" \
+		-d '{"inputs": [{"name": "name", "shape": [1], "datatype": "BYTES", "data": ["Bob Immerman"]}]}' \
+		--max-time 10
+	@echo ""
+	@echo ""
+
