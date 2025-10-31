@@ -2,6 +2,10 @@
 
 A KServe-compliant HTTP API for classifying full names into one of three categories: `Person`, `Company`, or `University`.
 
+🌐 **[Try it here](http://3.136.23.88:8000/)** - Live demo of the deployed classifier
+
+<img src="docs/img.png" alt="Champion Model Results" width="300">
+
 ## Project Overview
 
 This project implements a production-ready KServe V2 inference server that classifies names. The server loads a trained champion machine learning model selected via an internal model registry.
@@ -94,18 +98,4 @@ curl -X POST http://3.136.23.88:8000/v2/models/name-classifier/infer \
     }
   ]
 }
-```
-
-## Project Structure
-
-```
-melio/
-├── src/
-│   ├── model.py           # NameClassifier class (KServe Model)
-│   └── server.py          # KServe ModelServer entrypoint
-├── requirements.txt       # Python dependencies
-├── Dockerfile            # KServe v0.10 compliant container
-├── docker-compose.yml    # Local development with Docker
-├── .dockerignore        # Docker build optimization
-└── README.md            # This file
 ```
