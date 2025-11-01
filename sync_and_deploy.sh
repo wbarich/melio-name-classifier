@@ -299,3 +299,6 @@ else
     print_info "To check status: ssh -i $EC2_KEY $EC2_USER@$EC2_HOST 'cd $REMOTE_DIR && docker-compose ps'"
 fi
 
+
+
+
